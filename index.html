@@ -294,7 +294,7 @@ button.gear.on{background:#c96d0c!important}
  #nav{transform:translateX(-105%);transition:transform .22s;box-shadow:6px 0 24px rgba(0,0,0,.3)}
  body.nopen #nav{transform:none}body.nopen #scrim{display:block}
  #bnav{display:flex;position:fixed;z-index:30;left:0;right:0;bottom:0;background:var(--hd);padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px));justify-content:space-around}
- #bnav button{flex:1;background:transparent;border:0;color:#cfe3d3;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;padding:4px 0}
+ #bnav button{flex:1;min-width:0;background:transparent;border:0;color:#cfe3d3;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;padding:4px 0}
  #bnav button svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
  #bnav button.on{color:var(--ac)}
  html,body{overflow:hidden;height:100%}body{padding:0}
@@ -454,7 +454,7 @@ u.sd.s0{background:#4f9f5c}u.sd.s1{background:#e8b52a}u.sd.s2{background:#3f80d6
 .hlist li.hem{border:0}
 .hed{flex:none;width:34px;height:34px;border-radius:10px;border:1px solid #d8d0b5;background:#fff;padding:0;display:flex;align-items:center;justify-content:center}
 .hed svg{width:18px;height:18px;stroke:var(--hd);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-#nav .qk{flex-wrap:wrap}#nav .qk button{flex:1 1 22%;padding:10px 2px;font-size:12.5px}
+#nav .qk{flex-wrap:wrap}#nav .qk button{flex:1 1 17%;padding:10px 2px;font-size:12.5px}
 }</style>
 <style>@media screen{.asf{display:flex;flex-direction:column;gap:2px;font-size:12px;margin-top:6px}.asr select{width:100%;box-sizing:border-box}.hlist small.od{color:#b3541e;font-weight:700}}</style>
 <style>@media screen{
@@ -839,6 +839,32 @@ body.printing-all #allled,body.printing-all #allm{break-before:page}
 <style>.fic .fmi{display:flex;flex-direction:column;justify-content:flex-end;font-size:12px;color:var(--mut);line-height:1.3;padding-bottom:6px}.fic .fmi b{font-size:13px;color:var(--hd)}.fic .fsrc{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding:6px 0 2px}.fic .fsrc .fsl{font-size:12px;color:var(--mut);width:100%}.fic .fsrc label.fr{flex-direction:row;align-items:center;gap:6px;font-size:15px;color:var(--hd);font-weight:700}.fic .fsrc label.fr input{width:20px;height:20px;accent-color:#f08a1c}.fic .fsrc .fmb{margin-left:auto;width:46px;height:46px;padding:0;border:0;border-radius:50%;background:#f08a1c;color:#fff;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 2px 5px rgba(0,0,0,.2)}.fic .fsrc .fmb svg{width:24px;height:24px}
 #fmov{position:fixed;inset:0;z-index:49;background:#f7f1e3;display:flex;flex-direction:column}#fmov .fmbar{display:flex;align-items:center;gap:8px;padding:calc(env(safe-area-inset-top) + 8px) 10px 8px;background:#2f5d3a;color:#fff}#fmov .fmbar b{flex:1;font-size:15px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center}#fmov .fmbar button{min-height:40px;padding:0 12px;border:0;border-radius:10px;background:rgba(255,255,255,.18);color:#fff;font-weight:700;font-size:14px}#fmov .fmbar button.ok{background:#f08a1c}#fmov iframe{flex:1;border:0;width:100%;background:#f7f1e3}</style>
 <style>.bkbn{display:flex;align-items:center;gap:8px;margin:8px 10px;padding:8px 12px;border-radius:12px;background:#fff3d6;border:1px solid #f0c36a;font-size:13px;color:#6b4a00}.bkbn[hidden]{display:none}.bkbn span{flex:1}.bkbn button{min-height:34px;padding:0 12px;border:0;border-radius:10px;background:#f08a1c;color:#fff;font-weight:700}.bkbn #bkx{background:transparent;color:#6b4a00;font-size:18px;padding:0 6px}</style>
+<style>
+#pg15 .wxbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0}#pg15 .wxbar .tab{flex:0 0 auto}
+#pg15 .wxrf{margin-left:auto;width:40px;height:40px;border-radius:50%;border:2px solid #f08a1c;background:#fff;display:inline-flex;align-items:center;justify-content:center;padding:0}#pg15 .wxrf svg{width:22px;height:22px;stroke:#f08a1c;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}#pg15 .wxrf:active{background:#fff1de}
+#pg15 .ptitle b{flex:none}#pg15 .wxnet{font-size:11px;font-weight:400;color:#555;align-self:flex-end;padding-bottom:3px}#pg15 .wxut{margin-left:auto;font-size:12px;color:#444;white-space:nowrap}
+#pg15 table.wxt tr.tdy td{background:#f1f8ef}
+#pg15 .wxnote{font-size:12px;color:var(--mut,#66756b);line-height:1.6;max-width:820px;margin:4px 0}#pg15 .wxnote.w{color:#c26a00;font-weight:700}
+#pg15 .wxwk{display:grid;grid-template-columns:repeat(auto-fill,minmax(76px,1fr));gap:6px;margin:8px 0 14px;max-width:820px}
+#pg15 .wxc{background:#fff;border:1px solid rgba(0,0,0,.12);border-radius:12px;padding:6px 4px;text-align:center;display:flex;flex-direction:column;gap:1px;align-items:center}
+#pg15 .wxc.on{border:2px solid var(--hd);background:#f1f8ef}#pg15 .wxc b{font-size:12px}#pg15 .wxc .wxi{font-size:26px;line-height:1.2}#pg15 .wxc small{font-size:11px;color:#444}
+#pg15 .wxc em{font-style:normal;font-weight:700;color:#d33}#pg15 .wxc u{text-decoration:none;color:#2b6fd1;font-weight:700}
+#pg15 h3.wxh3{font-size:15px;margin:16px 0 4px;color:var(--hd)}
+#pg15 details.wxd{background:#fff;border:1px solid rgba(0,0,0,.12);border-radius:12px;margin:8px 0;max-width:820px;overflow:hidden}
+#pg15 details.wxd>summary{padding:10px 12px;cursor:pointer;font-size:14px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}#pg15 details.wxd>summary small{color:#555;font-size:12px}
+#pg15 table.wxt{width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed}
+#pg15 table.wxt th small{color:#1f5233;font-weight:400}#pg15 table.wxt th{background:#e3f1dd;color:#1f5233;font-size:11px;padding:4px 2px;font-weight:700;border-bottom:1px solid rgba(0,0,0,.12)}
+#pg15 table.wxt td{padding:3px 2px;text-align:center;border-bottom:1px solid rgba(0,0,0,.07);vertical-align:middle;line-height:1.25}
+#pg15 table.wxt tr.past td{opacity:.45}#pg15 table.wxt tr.now td{background:#fff3d6;font-weight:700}
+#pg15 table.wxt td.ic1{font-size:18px}#pg15 table.wxt td small{display:block;font-size:10px;color:#555;font-weight:400}
+#pg15 table.wxt .hi{color:#d33;font-weight:700}#pg15 table.wxt .lo{color:#2b6fd1;font-weight:700}
+#pg15 .wxar{display:inline-block;font-style:normal;font-weight:700;color:var(--hd)}
+#pg15 .wxpast{margin:6px 10px 8px;min-height:34px;padding:0 12px;border-radius:10px;border:1px solid #999;background:#fff;font-size:12px}
+#pg15 table.wxt.d3 td.dl{font-weight:700;font-size:12px;text-align:left;padding-left:6px}#pg15 table.wxt.d3 td.dl small{font-weight:400}
+#pg15 .wxmore{display:block;width:calc(100% - 20px);margin:8px 10px 10px;min-height:40px;border-radius:10px;border:1px solid var(--hd);background:#f1f8ef;color:var(--hd);font-weight:700;font-size:14px}
+#pg15 .wxsrc{display:block;font-size:11px;font-weight:400;color:#555;margin-top:2px}
+#pg15 .wxrfm{display:block;width:100%;max-width:820px;height:min(68vh,560px);min-height:380px;border:1px solid rgba(0,0,0,.15);border-radius:12px;background:#fff;margin:6px 0}
+</style>
 <style>#nav .rprow.r4 .it{flex:0 0 calc(50% - 5px)}.trcnt{margin-left:4px;min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:#f08a1c;color:#fff;font-size:11px;font-weight:700;line-height:18px;text-align:center}.trcnt[hidden]{display:none}
 .trl{list-style:none;margin:8px 0;padding:0;max-width:780px}.trl li{display:flex;align-items:center;flex-wrap:wrap;gap:6px 10px;background:#fff;border:1px solid rgba(0,0,0,.12);border-radius:12px;padding:8px 10px;margin:6px 0}
 .trl .trt{font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:#e3f1dd;color:var(--hd);white-space:nowrap}.trl .trb{flex:1 1 160px;min-width:0}.trl .trb b{display:block;font-size:14px;word-break:break-all}.trl .trb small{color:var(--mut);font-size:12px}
@@ -981,6 +1007,7 @@ body.printing-all #allled,body.printing-all #allm{break-before:page}
 <div id="pg13" hidden></div>
 <div id="pg12" hidden></div>
 <div id="pg14" hidden></div>
+<div id="pg15" hidden></div>
 <div id="set" hidden></div>
 </div>
 <script>
@@ -1828,6 +1855,131 @@ const TRR={
   S.fields[i]=r.item;S.fields[i].on=true;Object.keys(r.marks||{}).forEach(k=>{S.marks[k]=r.marks[k]});if(r.under){S.under=S.under||{};Object.keys(r.under).forEach(k=>{S.under[k]=r.under[k]})}fsel();return 1}
 };
 function trashCnt(){const n=(S.trash||[]).length,e=document.getElementById("trcnt");if(e){e.textContent=n?String(n):"";e.hidden=!n}}
+
+/* ===== 天気予報（圃場の1時間ごと・明日・週間） ===== */
+const WXP={f:-1,c:{},busy:0,past:false,m:"f",jc:null,more:{}};
+const WXW=["日","月","火","水","木","金","土"],WXDR=["北","北東","東","南東","南","南西","西","北西"];
+const wxE=c=>{c=+c;if(c<=1)return"☀️";if(c==2)return"⛅";if(c==3)return"☁️";if(c==45||c==48)return"🌫️";if(c>=95)return"⛈️";if((c>=71&&c<=77)||c==85||c==86)return"❄️";return"🌧️"};
+const wxL=c=>{c=+c;if(c<=1)return"晴れ";if(c==2)return"晴れ時々曇り";if(c==3)return"曇り";if(c==45||c==48)return"霧";if(c>=51&&c<=57)return"霧雨";if(c>=61&&c<=67)return"雨";if((c>=71&&c<=77)||c==85||c==86)return"雪";if(c>=80&&c<=82)return"にわか雨";if(c>=95)return"雷雨";return""};
+const wxDir=d=>d==null?"":WXDR[Math.round((((+d)%360)+360)%360/45)%8];
+const wxAr=d=>d==null?"":`<i class="wxar" style="transform:rotate(${(+d+180)%360}deg)">↑</i>`;
+const wxN=v=>v==null||isNaN(v)?"－":String(Math.round(v)),wxD=v=>v==null||isNaN(v)?"－":String(Math.round(v*10)/10);
+const wxDt=d=>{const t=new Date(d+"T00:00:00");return (t.getMonth()+1)+"/"+t.getDate()+"（"+WXW[t.getDay()]+"）"};
+async function wxJma(force){
+ if(WXP.jc&&!force&&Date.now()-WXP.jc.t<18e5)return WXP.jc.m;
+ const J=await jget(JB+"forecast/data/forecast/270000.json",12000);
+ if(!J)return WXP.jc?WXP.jc.m:null;
+ const m={},ent=d=>m[d]=m[d]||{};
+ try{const S0=J[0].timeSeries,a0=S0[0],c0=a0.areas[0];a0.timeDefines.forEach((x,q)=>{ent(x.slice(0,10)).c=c0.weatherCodes[q]});
+  const pA=S0[1];pA.timeDefines.forEach((x,q)=>{const v=pA.areas[0].pops[q];if(v!==""&&v!=null){const e=ent(x.slice(0,10));e.p=Math.max(e.p==null?0:e.p,+v)}});
+  const tA=S0[2];tA.timeDefines.forEach((x,q)=>{const v=tA.areas[0].temps[q];if(v!==""&&v!=null){const e=ent(x.slice(0,10)),h=+x.slice(11,13);if(h<6){if(e.lo==null)e.lo=+v}else if(e.hi==null)e.hi=+v}})}catch(e){}
+ try{const W=J[1].timeSeries,w0=W[0],a=w0.areas[0];w0.timeDefines.forEach((x,q)=>{const e=ent(x.slice(0,10));if(e.c==null&&a.weatherCodes[q])e.c=a.weatherCodes[q];const v=a.pops[q];if(e.p==null&&v!==""&&v!=null)e.p=+v});
+  const t1=W[1],bb=t1.areas[0];t1.timeDefines.forEach((x,q)=>{const e=ent(x.slice(0,10));if(e.lo==null&&bb.tempsMin[q]!==""&&bb.tempsMin[q]!=null)e.lo=+bb.tempsMin[q];if(e.hi==null&&bb.tempsMax[q]!==""&&bb.tempsMax[q]!=null)e.hi=+bb.tempsMax[q]})}catch(e){}
+ WXP.jc={t:Date.now(),m};return m}
+async function wxpGet(i,force){const [r,jm]=await Promise.all([wxpGet0(i,force),wxJma(force).catch(()=>null)]);r.jm=jm;return r}
+async function wxpGet0(i,force){
+ const f=S.fields[i],g=await geoField(f),k=(+g.lat).toFixed(3)+","+(+g.lon).toFixed(3),c=WXP.c[k];
+ if(c&&!force&&Date.now()-c.t<18e5)return{...c,g};
+ const u="https://api.open-meteo.com/v1/forecast?latitude="+g.lat+"&longitude="+g.lon+"&hourly=temperature_2m,relative_humidity_2m,precipitation_probability,precipitation,weather_code,wind_speed_10m,wind_direction_10m&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,wind_speed_10m_max&wind_speed_unit=ms&timezone=Asia%2FTokyo&forecast_days=8";
+ const j=await jget(u,15000);
+ if(j&&j.hourly&&j.hourly.time&&j.daily&&j.daily.time){const o={t:Date.now(),j};WXP.c[k]=o;try{localStorage.setItem("hojo5wxp",JSON.stringify({k,t:o.t,j}))}catch(e){}return{...o,g}}
+ let old=c;if(!old){try{const z=JSON.parse(localStorage.getItem("hojo5wxp")||"null");if(z&&z.k==k)old={t:z.t,j:z.j}}catch(e){}}
+ return old?{...old,g,stale:1}:{g,err:1}}
+const wxHM=t=>new Date(t).toLocaleTimeString("ja-JP",{hour:"2-digit",minute:"2-digit"});
+function wxpHead(on,st,ut){
+ return `<div class="ptitle noprint"><span class="pti"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a4 4 0 0 1-.5-7.97A5.5 5.5 0 0 1 17 8.5 4.5 4.5 0 0 1 17 18z"/></svg></span><b>天気予報</b><small class="wxnet">（ネット接続要）</small><span class="wxut">${ut||""}</span></div>
+ <div class="wxbar noprint"><button type="button" class="tab${WXP.m=="f"?" on":""}" data-wxm="f">予報</button><button type="button" class="tab${WXP.m=="r"?" on":""}" data-wxm="r">雨雲レーダー</button><button type="button" class="wxrf" data-wxr="1" aria-label="最新にする" title="最新にする"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></svg></button></div>
+ <div class="wxbar noprint">${on.map(i=>`<button type="button" class="tab${i==WXP.f?" on":""}" data-wxf="${i}">${esc(S.fields[i].name||L(i))}</button>`).join("")}</div>${st?`<div class="wxnote">${st}</div>`:""}`}
+function wxpBody(r){
+ const J=r.j,H=J.hourly,D=J.daily,td=todayStr(),nh=new Date().getHours(),by={};
+ H.time.forEach((t,q)=>{(by[t.slice(0,10)]=by[t.slice(0,10)]||[]).push(q)});
+ const jm=r.jm||{},hasJ=Object.keys(jm).length>0;
+ const JV=(d,q)=>{const j=jm[d]||{},ic=(j.c!=null&&jmaCode(j.c))||wxE(D.weather_code[q]);return{ic,tx:icW(ic)||wxL(D.weather_code[q]),hi:j.hi!=null?j.hi:D.temperature_2m_max[q],lo:j.lo!=null?j.lo:D.temperature_2m_min[q],p:j.p!=null?j.p:D.precipitation_probability_max[q]}};
+ const dn=(d,q)=>d==td?"今日":q==1?"明日":wxDt(d);
+ const di=d=>D.time.indexOf(d);
+ let o="";
+ if(r.stale)o+=`<div class="wxnote w">通信できなかったため、前回（${new Date(r.t).toLocaleString("ja-JP",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"})}）に取得した予報を表示しています。</div>`;
+ if(!r.g.ex)o+=`<div class="wxnote w">この圃場の位置（住所または緯度経度）が未設定のため、仮の地点の予報です。圃場の住所を入れると、その場所の予報になります。</div>`;
+ const hourly=(d,q)=>{const ix=by[d]||[];if(!ix.length)return"";const isT=d==td,hh=x=>+H.time[x].slice(11,13),pastN=isT?ix.filter(x=>hh(x)<nh).length:0;
+  const base=ix.filter(x=>isT?hh(x)>=nh:hh(x)>=6),more=!!WXP.more[d],all=more?(isT?(WXP.past?ix:base):ix):base.slice(0,5);
+  const rows=all.map(x=>{const h=hh(x),pp=H.precipitation_probability[x],ps=pp==null?"":`background:linear-gradient(90deg,rgba(80,160,255,.35) ${pp}%,transparent ${pp}%)`,past=isT&&h<nh;
+   return `<tr class="${past?"past":""}${isT&&h==nh?" now":""}"><td>${h}時</td><td class="ic1" title="${wxL(H.weather_code[x])}">${wxE(H.weather_code[x])}</td><td>${wxN(H.temperature_2m[x])}°</td><td style="${ps}">${wxN(pp)}%</td><td>${wxD(H.precipitation[x])}</td><td>${wxN(H.relative_humidity_2m[x])}%</td><td>${wxAr(H.wind_direction_10m[x])}${wxDir(H.wind_direction_10m[x])}<small>${wxD(H.wind_speed_10m[x])}m/s</small></td></tr>`}).join("");
+  const k=di(d),v=JV(d,k);
+  return `<details class="wxd" open><summary><b>${dn(d,q)}の1時間ごと</b><small>${wxDt(d)}　${v.tx}　最高 ${wxN(v.hi)}°／最低 ${wxN(v.lo)}°　降水確率 ${wxN(v.p)}%</small></summary>
+  ${isT&&more&&pastN?`<button type="button" class="wxpast noprint" data-wxp="1">${WXP.past?"過ぎた時間をかくす":"過ぎた時間（"+pastN+"時間分）も表示"}</button>`:""}
+  <table class="wxt"><thead><tr><th style="width:11%">時</th><th style="width:12%">天気</th><th style="width:13%">気温</th><th style="width:20%">降水確率</th><th style="width:14%">雨量mm</th><th style="width:12%">湿度</th><th style="width:18%">風</th></tr></thead><tbody>${rows}</tbody></table>
+  ${more||base.length>5?`<button type="button" class="wxmore noprint" data-wxmore="${d}">${more?"たたむ":"この先をもっと見る"}</button>`:""}</details>`};
+ 
+ const blk=(d,a,b,mid)=>{const ix=(by[d]||[]).filter(x=>{const h=+H.time[x].slice(11,13);return h>=a&&h<=b});if(!ix.length)return"<td>－</td>";
+  const ts=ix.map(x=>H.temperature_2m[x]).filter(v=>v!=null),pp=Math.max(...ix.map(x=>H.precipitation_probability[x]||0)),mx=ix.find(x=>+H.time[x].slice(11,13)==mid)||ix[0];
+  return `<td><span class="ic1" style="font-size:20px" title="${wxL(H.weather_code[mx])}">${wxE(H.weather_code[mx])}</span><small>${ts.length?wxN(ts.reduce((u,v)=>u+v,0)/ts.length)+"°":"－"}　雨${wxN(pp)}%</small></td>`};
+ const wk=`<h3 class="wxh3">一週間の天気${hasJ?`<small class="wxsrc">天気・気温・雨の確率は気象庁（大阪府の予報）。朝・昼・夜の気温はOpen-Meteo</small>`:""}</h3><div class="ow"><table class="wxt d3" style="max-width:820px;background:#fff"><thead><tr><th style="width:22%">日</th><th>朝<br><small>6〜11時</small></th><th>昼<br><small>12〜17時</small></th><th>夜<br><small>18〜23時</small></th><th style="width:19%">最高／最低<br><small>風</small></th></tr></thead><tbody>`+D.time.map((d,q)=>{const v=JV(d,q);return `<tr class="${d==td?"tdy":""}"><td class="dl">${q==0?"今日":q==1?"明日":wxDt(d)}<small>${q<2?wxDt(d)+" ":""}${v.tx}</small></td>${blk(d,6,11,9)}${blk(d,12,17,15)}${blk(d,18,23,21)}<td><span class="hi">${wxN(v.hi)}°</span>／<span class="lo">${wxN(v.lo)}°</span><small>${wxD(D.wind_speed_10m_max[q])}m/s</small></td></tr>`}).join("")+`</tbody></table></div>`;
+ o=o+wk+`<h3 class="wxh3">今日・明日の1時間ごと</h3>`+hourly(D.time[0],0)+(D.time[1]?hourly(D.time[1],1):"");
+ o+=`<div class="wxnote" style="margin-top:12px">${hasJ?"天気・最高最低気温・降水確率は気象庁（大阪府全体の予報）です。":""}朝・昼・夜と1時間ごとの気温・降水確率・雨量・湿度・風は、Open-Meteo（予報モデルによる推定値）です。風向は風が吹いてくる方角、矢印は吹いていく向きです。実際の天気は、気象庁の発表もご確認ください。</div>`;
+ return o}
+
+const WXRD=`<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>html,body{margin:0;height:100%;font-family:-apple-system,"Hiragino Sans",sans-serif}#m{position:absolute;top:0;left:0;right:0;bottom:62px;background:#e8eef0}
+#c{position:absolute;left:0;right:0;bottom:0;height:62px;background:#fff;border-top:1px solid #ccc;box-sizing:border-box;padding:6px 8px;display:flex;flex-direction:column;gap:3px}
+#r1{display:flex;align-items:center;gap:8px}#pl{width:40px;height:34px;border-radius:8px;border:1px solid #157a43;background:#157a43;color:#fff;font-size:16px;flex:0 0 auto}
+#sl{flex:1;min-width:0}#tl{font-size:13px;font-weight:700;min-width:84px;text-align:right}#tl.f{color:#c26a00}
+#lg{font-size:10px;color:#555;display:flex;align-items:center;gap:6px}#lg i{display:inline-block;width:90px;height:8px;border-radius:4px;background:linear-gradient(90deg,#b9dcff,#3b8cff,#1c4fd8,#ffe600,#ff9a00,#ff2a00,#b4006b)}
+#msg{position:absolute;left:8px;right:8px;top:8px;z-index:1000;background:rgba(255,255,255,.92);border-radius:8px;padding:6px 10px;font-size:12px;color:#c26a00;font-weight:700;display:none}
+</style></head><body><div id="m"></div><div id="msg"></div><div id="c"><div id="r1"><button id="pl" type="button" aria-label="再生">▶</button><input id="sl" type="range" min="0" max="0" value="0"><span id="tl"></span></div><div id="lg">雨の強さ <i></i> 弱い→激しい　気象庁・地理院タイル</div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"><\/script>
+<script>
+var LAT=__LAT__,LON=__LON__,NM=__NM__,B="https://www.jma.go.jp/bosai/jmatile/data/nowc/";
+var fr=[],cur=0,tm=null,layers={},map=null,obsN=0;
+function msg(t){var e=document.getElementById("msg");e.textContent=t||"";e.style.display=t?"block":"none"}
+function pad(n){return n<10?"0"+n:""+n}
+function jt(s){return new Date(Date.UTC(+s.slice(0,4),+s.slice(4,6)-1,+s.slice(6,8),+s.slice(8,10),+s.slice(10,12)))}
+function lab(s){var d=new Date(jt(s).getTime()+9*3600000);return pad(d.getUTCHours())+":"+pad(d.getUTCMinutes())}
+function gj(u){return fetch(u,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error("x");return r.json()})}
+function show(i){if(!fr.length)return;cur=i;var f=fr[i];
+ Object.keys(layers).forEach(function(k){if(+k!==i)layers[k].setOpacity(0)});
+ if(!layers[i]){layers[i]=L.tileLayer(B+f.b+"/none/"+f.v+"/surf/hrpns/{z}/{x}/{y}.png",{opacity:0,maxNativeZoom:10,maxZoom:12,zIndex:5+i});layers[i].addTo(map)}
+ layers[i].setOpacity(.7);document.getElementById("sl").value=i;
+ var t=document.getElementById("tl");t.textContent=lab(f.v)+(f.f?" 予測":" 実況");t.className=f.f?"f":""}
+function stop(){if(tm){clearInterval(tm);tm=null}document.getElementById("pl").textContent="▶"}
+function start(){if(tm)return;document.getElementById("pl").textContent="⏸";tm=setInterval(function(){if(!document.getElementById("m").offsetWidth){stop();return}show((cur+1)%fr.length)},700)}
+function init(){
+ if(typeof L==="undefined"){msg("地図の部品を読み込めませんでした。通信状態をご確認ください。");return}
+ map=L.map("m",{zoomControl:true}).setView([LAT,LON],9);
+ L.tileLayer("https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png",{maxZoom:12,maxNativeZoom:18,attribution:"地理院タイル"}).addTo(map);
+ L.circleMarker([LAT,LON],{radius:7,color:"#fff",weight:2,fillColor:"#e22",fillOpacity:1}).addTo(map).bindTooltip(NM,{permanent:true,direction:"top"});
+ document.getElementById("pl").onclick=function(){tm?stop():start()};
+ document.getElementById("sl").oninput=function(){stop();show(+this.value)};
+ msg("雨雲の画像を取得中…");
+ Promise.all([gj(B+"targetTimes_N1.json"),gj(B+"targetTimes_N2.json").catch(function(){return[]})]).then(function(a){
+  var n1=a[0].slice().sort(function(x,y){return x.validtime<y.validtime?-1:1});
+  if(!n1.length)throw new Error("none");
+  var last=n1[n1.length-1].validtime;
+  var o=n1.slice(-13).map(function(x){return{b:x.basetime,v:x.validtime,f:0}});obsN=o.length;
+  var fc=a[1].filter(function(x){return x.validtime>last}).sort(function(x,y){return x.validtime<y.validtime?-1:1}).map(function(x){return{b:x.basetime,v:x.validtime,f:1}});
+  fr=o.concat(fc);var sl=document.getElementById("sl");sl.max=fr.length-1;msg("");show(obsN-1)
+ }).catch(function(){msg("雨雲レーダーの画像を取得できませんでした。通信状態をご確認のうえ、「最新にする」を押してください。")})}
+init();
+<\/script></body></html>`;
+function wxRadarDoc(lat,lon,nm){return WXRD.replace("__LAT__",+lat).replace("__LON__",+lon).replace("__NM__",JSON.stringify(String(nm||"圃場")).replace(/</g,"\\u003c"))}
+async function renderWxPage(force){
+ const p=$("pg15"),on=S.fields.map((f,i)=>f.on?i:-1).filter(i=>i>=0);
+ if(!on.length){p.innerHTML=wxpHead([],"","")+`<div class="hint" style="padding:24px 0;text-align:center">有効な圃場がありません。設定で圃場を有効にしてください。</div>`;return}
+ if(WXP.f<0||!on.includes(WXP.f))WXP.f=on[0];
+ const my=++WXP.busy;
+ if(WXP.m=="r"){p.innerHTML=wxpHead(on,"","更新 "+wxHM(Date.now()))+`<div class="wxnote">▶で、過去1時間の実況から1時間先までの予測を、5分ごとに再生します。バーで時刻を選べます。赤い点が圃場の位置です。</div><iframe id="wxrf" class="wxrfm" title="雨雲レーダー"></iframe><div class="wxnote">出典：気象庁（高解像度降水ナウキャスト）、国土地理院タイル。</div>`;
+  let g=null;try{g=await geoField(S.fields[WXP.f])}catch(e){}
+  if(my!=WXP.busy||V.tab!=15)return;const fe=$("wxrf");if(fe&&g)fe.srcdoc=wxRadarDoc(g.lat,g.lon,S.fields[WXP.f].name||L(WXP.f));return}
+ p.innerHTML=wxpHead(on,"","取得中…");
+ let r;try{r=await wxpGet(WXP.f,force)}catch(e){r={err:1}}
+ if(my!=WXP.busy||V.tab!=15)return;
+ p.innerHTML=wxpHead(on,"",r.err?"":"更新 "+wxHM(r.t)+(r.stale?"（前回）":""))+(r.err?`<div class="wxnote w" style="font-size:14px">天気を取得できませんでした。通信状態をご確認のうえ、「最新にする」を押してください。</div>`:wxpBody(r))}
+$("pg15").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+ if(b.dataset.wxm){WXP.m=b.dataset.wxm;renderWxPage()}
+ else if(b.dataset.wxf!=null){WXP.f=+b.dataset.wxf;renderWxPage()}
+ else if(b.dataset.wxr){renderWxPage(true)}
+ else if(b.dataset.wxp){WXP.past=!WXP.past;renderWxPage()}
+ else if(b.dataset.wxmore){WXP.more[b.dataset.wxmore]=!WXP.more[b.dataset.wxmore];if(!WXP.more[b.dataset.wxmore])WXP.past=false;renderWxPage()}});
 function renderTrash(){const T=S.trash||[],p=$("pg14");
  const fd=t=>{const d=new Date(t),q=n=>String(n).padStart(2,"0");return (d.getMonth()+1)+"/"+d.getDate()+" "+q(d.getHours())+":"+q(d.getMinutes())};
  p.innerHTML=`<div class="ptitle noprint"><span class="pti"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6"/></svg></span><b>ゴミ箱</b></div>
@@ -2133,17 +2285,17 @@ $("yl").onchange=e=>{const t=e.target;if(!t.dataset.yf)return;
  if(t.value==="")delete r[t.dataset.yf];else r[t.dataset.yf]=+t.value;
  save();refreshY()};
 function toTop(){const a=$("app");[document.documentElement,document.body,a].forEach(e=>{if(e){e.scrollTop=0;e.scrollLeft=0}});window.scrollTo(0,0);document.querySelectorAll(".wrap").forEach(w=>{w.scrollTop=0})}
-function setTab(n){const pv=V.tab;document.body.classList.toggle("t5",n==5);V.tab=n;const PG={0:"ph",9:"ps",10:"pj",1:"pg1",2:"pg2",3:"set",4:"pg4",5:"pg5",6:"pg6",7:"pg7",8:"pg8",11:"pg11",12:"pg12",13:"pg13",14:"pg14"};Object.keys(PG).forEach(j=>{$(PG[j]).hidden=(+j!=n);{const tbn=$("tab"+j);if(tbn)tbn.className=(j==3?"ib gear":"tab")+(+j==n?" on":"")}});$("pg0").hidden=![0,7,9,10].includes(n);{const el=$(PG[n]);if(el&&[0,7,9,10].includes(n)){el.classList.remove("sl-in");void el.offsetWidth;el.classList.add("sl-in")}}if(n==0)renderHome();else if(n==9)renderShip();else if(n==10)renderJournal();else if(n==1)render();else if(n==2)renderY();else if(n==3)renderSet();else if(n==4)renderP();else if(n==5)renderM();else if(n==6)renderPlan();else if(n==7)renderDiary();else if(n==13)renderSim();else if(n==11)renderRpt();else if(n==12)renderLog();else if(n==14)renderTrash();else if(n==8){if(!DF)DF=newDF();renderDiaryList()}if(pv!==n){toTop();setTimeout(toTop,0)}window.navSync&&navSync(n)}
+function setTab(n){const pv=V.tab;document.body.classList.toggle("t5",n==5);V.tab=n;const PG={0:"ph",9:"ps",10:"pj",1:"pg1",2:"pg2",3:"set",4:"pg4",5:"pg5",6:"pg6",7:"pg7",8:"pg8",11:"pg11",12:"pg12",13:"pg13",14:"pg14",15:"pg15"};Object.keys(PG).forEach(j=>{$(PG[j]).hidden=(+j!=n);{const tbn=$("tab"+j);if(tbn)tbn.className=(j==3?"ib gear":"tab")+(+j==n?" on":"")}});$("pg0").hidden=![0,7,9,10].includes(n);{const el=$(PG[n]);if(el&&[0,7,9,10].includes(n)){el.classList.remove("sl-in");void el.offsetWidth;el.classList.add("sl-in")}}if(n==0)renderHome();else if(n==9)renderShip();else if(n==10)renderJournal();else if(n==1)render();else if(n==2)renderY();else if(n==3)renderSet();else if(n==4)renderP();else if(n==5)renderM();else if(n==6)renderPlan();else if(n==7)renderDiary();else if(n==13)renderSim();else if(n==11)renderRpt();else if(n==12)renderLog();else if(n==14)renderTrash();else if(n==15)renderWxPage();else if(n==8){if(!DF)DF=newDF();renderDiaryList()}if(pv!==n){toTop();setTimeout(toTop,0)}window.navSync&&navSync(n)}
 
 (function(){
 const MENU=[[1,"栽培計画","plan",'<path d="M12 21v-9M12 12c0-4-3-6-7-6 0 4 3 6 7 6zM12 14c0-3 2-5 6-5 0 3-2 5-6 5z"/>'],[4,"肥培管理","prep",'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>'],[2,"収量管理","yield",'<path d="M3 20h18M6 20v-7M11 20V5M16 20v-10"/>'],[5,"設備投資","equip",'<path d="M3 21V9l9-6 9 6v12M9 21v-7h6v7"/>'],[6,"収支計画","budget",'<circle cx="12" cy="12" r="9"/><path d="M9 7l3 5 3-5M12 12v6M9.5 13.5h5M9.5 16h5"/>']];
 const GEAR=$("tab3").innerHTML;
-$("nav").innerHTML='<div class="nt"><span>AGRIBA <span style="color:#f08a1c">Sim</span></span><button type="button" class="nclose" data-nclose="1" aria-label="メニューを閉じる" title="閉じる">◀</button></div><div class="qk"><button data-q="0">ホーム</button><button data-q="7">作業</button><button data-q="ship">出荷</button><button data-q="10">日誌</button></div>'+MENU.map(m=>`<div class="it" data-t="${m[0]}"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">${m[3]}</svg><button class="nm" data-go="${m[0]}">${m[1]}</button><button class="sg" data-set="${m[2]}" aria-label="${m[1]}の設定">${GEAR}</button></div>`).join("")+'<div class="rprow r2"><div class="it rp sm" data-t="8"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><button class="nm" type="button" data-go="8">生産履歴</button></div><div class="it rp sm" data-t="11"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg><button class="nm" type="button" data-rpt="1">レポート</button></div></div><div class="rprow r3"><div class="it rp pa sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9V3h10v6"/><rect x="4" y="9" width="16" height="8" rx="2"/><path d="M7 14h10v7H7z"/></svg><button class="nm" type="button" data-pall="1">一括印刷</button></div><div class="it rp sm" data-t="12"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg><button class="nm" type="button" data-go="12">過去ログ</button></div></div><div class="rprow r4"><div class="it rp sm" data-t="14"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6"/></svg><button class="nm" type="button" data-go="14">ゴミ箱</button><span id="trcnt" class="trcnt" hidden></span></div></div><div id="nyr"></div><div class="it rp sm simt" data-t="13"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 16l4-5 4 3 6-8"/></svg><button class="nm" type="button" data-go="13">年次シミュレーション</button></div><div class="it me" data-t="me">'+GEAR.replace("<svg",'<svg class="ic"')+'<button class="nm" type="button" data-me="1">マイページ</button></div>';
+$("nav").innerHTML='<div class="nt"><span>AGRIBA <span style="color:#f08a1c">Sim</span></span><button type="button" class="nclose" data-nclose="1" aria-label="メニューを閉じる" title="閉じる">◀</button></div><div class="qk"><button data-q="0">ホーム</button><button data-q="7">作業</button><button data-q="ship">出荷</button><button data-q="10">日誌</button><button data-q="15">天気</button></div>'+MENU.map(m=>`<div class="it" data-t="${m[0]}"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">${m[3]}</svg><button class="nm" data-go="${m[0]}">${m[1]}</button><button class="sg" data-set="${m[2]}" aria-label="${m[1]}の設定">${GEAR}</button></div>`).join("")+'<div class="rprow r2"><div class="it rp sm" data-t="8"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><button class="nm" type="button" data-go="8">生産履歴</button></div><div class="it rp sm" data-t="11"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg><button class="nm" type="button" data-rpt="1">レポート</button></div></div><div class="rprow r3"><div class="it rp pa sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9V3h10v6"/><rect x="4" y="9" width="16" height="8" rx="2"/><path d="M7 14h10v7H7z"/></svg><button class="nm" type="button" data-pall="1">一括印刷</button></div><div class="it rp sm" data-t="12"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg><button class="nm" type="button" data-go="12">過去ログ</button></div></div><div class="rprow r4"><div class="it rp sm" data-t="14"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6"/></svg><button class="nm" type="button" data-go="14">ゴミ箱</button><span id="trcnt" class="trcnt" hidden></span></div></div><div id="nyr"></div><div class="it rp sm simt" data-t="13"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 16l4-5 4 3 6-8"/></svg><button class="nm" type="button" data-go="13">年次シミュレーション</button></div><div class="it me" data-t="me">'+GEAR.replace("<svg",'<svg class="ic"')+'<button class="nm" type="button" data-me="1">マイページ</button></div>';
 const yrsUI=()=>{const cy=new Date().getFullYear(),set=new Set([cy,V.y]);Object.keys(S.plans||{}).forEach(k=>set.add(+k));if(S.liveYear!=null)set.add(+S.liveYear);
  const ys=[...set].filter(y=>y>=1900&&y<=2200).sort((a,b)=>b-a);
  $("nyr").innerHTML='<select id="yrsel" aria-label="年度">'+ys.map(y=>`<option value="${y}"${y==V.y?" selected":""}>${y}年度</option>`).join("")+'</select><button class="ynew" data-newyr="1" aria-label="新年度を作成" title="新しい年度を作る">＋</button><button class="ynew ydel" data-delyr="1" aria-label="年度を削除" title="年度を削除">−</button>'};
-const IC={home:'<path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',work:'<path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.6-.6-.6-2.6z"/>',ship:'<path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/>',diary:'<path d="M6 3h12a1 1 0 0 1 1 1v17H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM9 8h7M9 12h7"/>'};
-const BN=[["home","ホーム"],["work","作業"],["ship","出荷"],["diary","日誌"]];
+const IC={home:'<path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',work:'<path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.6-.6-.6-2.6z"/>',ship:'<path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/>',wx:'<path d="M7 18a4 4 0 0 1-.5-7.97A5.5 5.5 0 0 1 17 8.5 4.5 4.5 0 0 1 17 18z"/>',diary:'<path d="M6 3h12a1 1 0 0 1 1 1v17H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM9 8h7M9 12h7"/>'};
+const BN=[["home","ホーム"],["work","作業"],["ship","出荷"],["diary","日誌"],["wx","天気"]];
 $("bnav").innerHTML=BN.map(b=>`<button data-b="${b[0]}"><svg viewBox="0 0 24 24">${IC[b[0]]}</svg>${b[1]}</button>`).join("");
 const close=()=>document.body.classList.remove("nopen");
 $("hmb").onclick=()=>document.body.classList.toggle("nopen");$("scrim").onclick=close;
@@ -2171,12 +2323,13 @@ $("bnav").onclick=e=>{const b=e.target.closest("[data-b]");if(!b)return;const k=
  if(k=="home"){setTab(0)}
  else if(k=="work")setTab(7);
  else if(k=="diary")setTab(10);
+ else if(k=="wx")setTab(15);
  else if(k=="ship")setTab(9)};
 
 window.navSync=function(n){yrsUI();
  
  document.querySelectorAll("#nav .it").forEach(e=>e.classList.toggle("on",e.dataset.t=="me"?(n==3&&SSUB=="me"):+e.dataset.t==n));
- document.querySelectorAll("#bnav button").forEach(e=>e.classList.toggle("on",(e.dataset.b=="home"&&n==0)||(e.dataset.b=="ship"&&n==9)||(e.dataset.b=="work"&&n==7)||(e.dataset.b=="diary"&&n==10)));
+ document.querySelectorAll("#bnav button").forEach(e=>e.classList.toggle("on",(e.dataset.b=="home"&&n==0)||(e.dataset.b=="ship"&&n==9)||(e.dataset.b=="work"&&n==7)||(e.dataset.b=="diary"&&n==10)||(e.dataset.b=="wx"&&n==15)));
 };
 navSync(0);
 })();
@@ -2526,7 +2679,7 @@ function fdScenHtml(){const {sc}=fdBits();
 function fdFundHtml(){const {F,yin}=fdBits(),B=bmGet(),y=v=>fmtYen(v)||"0円",C=bmCalc();
  const leg=B.loan.length?`<div class="hint" style="max-width:760px;line-height:1.6">旧形式の借入（年額で直接入力）です。上の表に入れ直したら、削除してください（二重に数えます）。</div><div class="ow"><table class="yt"><thead><tr><th>借入先・名称</th><th class="n">年間の元金返済(円)</th><th class="n">年間の利息(円)</th><th></th></tr></thead><tbody>${B.loan.map((r,i)=>`<tr><td><input class="yin" style="width:220px;text-align:left" data-s="bm" data-bl="loan" data-bi="${i}" data-bf="n" value="${esc(r.n||"")}"></td><td class="n"><input class="yin" type="number" min="0" step="any" style="width:120px" data-s="bm" data-bl="loan" data-bi="${i}" data-bf="pr" value="${r.pr===""||r.pr==null?"":r.pr}"></td><td class="n"><input class="yin" type="number" min="0" step="any" style="width:110px" data-s="bm" data-bl="loan" data-bi="${i}" data-bf="int" value="${r.int===""||r.int==null?"":r.int}"></td><td><button type="button" data-bmdel="loan:${i}">削除</button></td></tr>`).join("")}</tbody></table></div>`:"";
  return `<h3>借入金・資金計画</h3>
- <div class="hint" style="max-width:760px;line-height:1.6">借入の返済は、元利均等で年ごとに計算します（返済期間には据置期間を含み、据置の間は利息だけを払います）。${V.y}年の元金返済と利息が、収支計画の「必要経費」と「現金の手残り」に自動で足されます（${V.y}年の合計：元金 ${y(C.pr)}・利息 ${y(C.int)}）。</div>
+ <div class="hint" style="max-width:760px;line-height:1.6">借入の返済は、元利均等で年ごとに計算します（返済期間には据置期間を含み、据置の間は利息だけを払います）。${V.y}年の利息は「必要経費」に、元金返済と利息は「現金の手残り」に、自動で反映されます。借りたお金そのものは、収入にも経費にもならず、現金の手残りにだけ入ります（${V.y}年の合計：元金 ${y(C.pr)}・利息 ${y(C.int)}）。</div>
  <div class="bar">自己資金（最初の手元資金） ${yin("cash",F.cash,130)} 円　　年間の生活費（世帯） ${yin("living",F.living,130)} 円</div>
  <div class="bar">設備の買い替え周期 ${yin("cycle",F.cycle,90,"各設備")} 年　<span class="hint" style="margin:0">空欄なら、各設備の耐用年数ごとに、初期費用と同じ額が現金で出ていきます（耐用年数1年の消耗資材は毎年）。5と入れると、耐用年数が2年以上の設備を5年ごとに買い替えます。</span></div>
  <div class="ow"><table class="yt"><thead><tr><th>借入の名称</th><th class="n">借入額(円)</th><th class="n">金利(年%)</th><th class="n">返済期間(年)</th><th class="n">うち据置(年)</th><th class="n">借入年</th><th></th></tr></thead><tbody>${F.loans.map((L,i)=>`<tr><td>${yin("loans."+i+".n",L.n,180,"","text")}</td><td class="n">${yin("loans."+i+".amt",L.amt,110)}</td><td class="n">${yin("loans."+i+".rate",L.rate,60)}</td><td class="n">${yin("loans."+i+".term",L.term,60)}</td><td class="n">${yin("loans."+i+".grace",L.grace,60)}</td><td class="n">${yin("loans."+i+".y",L.y,70,String(V.y))}</td><td><button type="button" data-fddel="loans:${i}">削除</button></td></tr>`).join("")||`<tr><td colspan="7" class="pn">借入はまだありません</td></tr>`}</tbody></table></div>

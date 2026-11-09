@@ -88,6 +88,21 @@ table.yr td.mk::before{content:"";z-index:2;position:absolute;left:0;right:0;top
 table.yr td.mks::before{border-radius:50%}
 .sw{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-1px;margin:0 3px 0 8px}
 .sw.s{background:#2f6fe4}.sw.t{background:#f5b800}.sw.h{background:#1f9d2b}
+.sw.ep{background:#d6336c}.sw.ee{background:#9c36b5}.sw.wbw{background:#9b6b3a}.sw.wbf{background:#4aa3df}.sw.wbd{background:#f2c14e}.sw.wbi{background:#8fd3c8}.sw.wbo{background:#b0b0b0}
+.sw.eq{background:#8d6e63}.sw.eb{background:#00897b}.sw.em{background:#e67e22}.sw.ev{background:#5c6bc0}.sw.er{background:#ad1457}
+td.evc.evq{background:#8d6e63!important}td.evc.evb{background:#00897b!important}td.evc.evm{background:#e67e22!important}td.evc.evv{background:#5c6bc0!important}
+td.evc.evr{background:#ad1457!important}
+td.evp{--bc:#d6336c;--bf:rgba(214,51,108,.25)}td.eve{--bc:#9c36b5;--bf:rgba(156,54,181,.25)}td.evq{--bc:#8d6e63;--bf:rgba(141,110,99,.28)}td.evb{--bc:#00897b;--bf:rgba(0,137,123,.25)}td.evm{--bc:#e67e22;--bf:rgba(230,126,34,.25)}td.evv{--bc:#5c6bc0;--bf:rgba(92,107,192,.25)}td.evr{--bc:#ad1457;--bf:rgba(173,20,87,.25)}
+.fry{display:flex;align-items:center;gap:3px;margin-top:2px;font-size:10px;color:var(--mut);white-space:nowrap}.fry input{width:46px;font-size:11px;padding:1px 2px;border:1px solid #c5d2c5;border-radius:4px}.fry .age{font-weight:700;color:#1f6f3d}
+.lgw{display:inline-block;margin-top:4px}.lgw b{font-size:11px;color:var(--mut);margin-right:2px}
+td.evc{color:#fff;font-weight:700;font-size:11px;line-height:26px;text-align:center;padding:0}
+td.evc.evp{background:#d6336c!important}td.evc.eve{background:#9c36b5!important}
+td.evc.evpl{opacity:.6}
+tr.pw td.wbc{height:14px;padding:0;font-size:10px;line-height:14px;text-align:center;color:#fff;font-weight:700;border-top:0}
+tr.pw td.wbw{background:#9b6b3a}tr.pw td.wbf{background:#4aa3df}tr.pw td.wbd{background:#f2c14e;color:#111}tr.pw td.wbi{background:#8fd3c8;color:#111}tr.pw td.wbo{background:#b0b0b0}
+tr.pw td.wbc.wb{border-left:0}
+tr.pwm td.c{border-bottom:0}
+.pdy{font-size:10px;font-weight:700;color:#1f6f3d;text-align:center;white-space:nowrap;margin-top:2px}.pks{font-size:12px;padding:2px 4px;margin:0 4px;border:1px solid #c5d2c5;border-radius:6px;background:#fff}
 #set{color:var(--fg);padding:4px 0}
 #set[hidden]{display:none}
 #set h3{font-size:14px;margin:16px 0 4px;border-bottom:2px solid var(--hd);padding-bottom:2px}
@@ -841,7 +856,7 @@ body.printing-all #allled,body.printing-all #allm{break-before:page}
 <style>.bkbn{display:flex;align-items:center;gap:8px;margin:8px 10px;padding:8px 12px;border-radius:12px;background:#fff3d6;border:1px solid #f0c36a;font-size:13px;color:#6b4a00}.bkbn[hidden]{display:none}.bkbn span{flex:1}.bkbn button{min-height:34px;padding:0 12px;border:0;border-radius:10px;background:#f08a1c;color:#fff;font-weight:700}.bkbn #bkx{background:transparent;color:#6b4a00;font-size:18px;padding:0 6px}</style>
 <style>
 #pg15 .wxbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0}#pg15 .wxbar .tab{flex:0 0 auto}
-#pg15 .wxrf{margin-left:auto;width:40px;height:40px;border-radius:50%;border:2px solid #f08a1c;background:#fff;display:inline-flex;align-items:center;justify-content:center;padding:0}#pg15 .wxrf svg{width:22px;height:22px;stroke:#f08a1c;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}#pg15 .wxrf:active{background:#fff1de}
+#pg15 .wxrf{margin-left:auto;width:38px;height:38px;min-width:38px;border-radius:50%;border:0;background:var(--ac);display:inline-flex;align-items:center;justify-content:center;padding:0;box-shadow:0 3px 8px rgba(240,138,28,.4)}#pg15 .wxrf svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}#pg15 .wxrf:active{filter:brightness(.92)}
 #pg15 .ptitle b{flex:none}#pg15 .wxnet{font-size:11px;font-weight:400;color:#555;align-self:flex-end;padding-bottom:3px}#pg15 .wxut{margin-left:auto;font-size:12px;color:#444;white-space:nowrap}
 #pg15 table.wxt tr.tdy td{background:#f1f8ef}
 #pg15 .wxnote{font-size:12px;color:var(--mut,#66756b);line-height:1.6;max-width:820px;margin:4px 0}#pg15 .wxnote.w{color:#c26a00;font-weight:700}
@@ -1011,7 +1026,21 @@ body.printing-all #allled,body.printing-all #allm{break-before:page}
 <div id="set" hidden></div>
 </div>
 <script>
-const NM={s:"播種",t:"定植",h:"収穫"},DOW="日月火水木金土",SEA=["春","夏","秋","冬"],L=i=>String.fromCharCode(65+i);
+const NM={s:"播種",t:"定植",h:"収穫"};
+/* 田んぼモード：作物ごとの表示設定（小麦・大豆などは行を足すだけ） */
+const LU={"水稲":{lab:{t:"田植え",h:"稲刈り"},bag:60,water:1}};
+const EVN={w:"入水・代かき",d:"中干し",p:"穂肥",e:"出穂",o:"落水",q:"剪定",b:"元肥",m:"摘果",v:"防除",r:"お礼肥"};
+/* 果樹：成園になるまでの年数（目安）。列を足せば他の果樹にも使えます */
+const FR={"ぶどう（種なし栽培）":3,"かき":5,"くり":5,"いちじく":3,"温州みかん":5,"うめ":4,"びわ":5,"さんしょう":3,"ゆず":5,"ブルーベリー":4};
+Object.keys(FR).forEach(c=>{LU[c]={tree:1,mat:FR[c],kinds:["q","b","m","v","h","r"],lab:{h:"収穫"}}});
+const treeAge=s=>{const l=luOf(s&&s.crop);if(!l||!l.tree||s.py===""||s.py==null)return null;return V.y-(+s.py)};
+const treeFac=s=>{const l=luOf(s&&s.crop),a=treeAge(s);if(!l||!l.tree||a==null)return 1;return a<=1?0:a>=l.mat?1:(a-1)/(l.mat-1)};
+const luOf=c=>(c&&LU[c])||null,isEvK=k=>!!k&&Object.prototype.hasOwnProperty.call(EVN,k);
+const kindName=(k,c)=>{const l=luOf(c);return (l&&l.lab[k])||EVN[k]||NM[k]||""};
+const kindList=c=>{const l=luOf(c);return l?(l.kinds||["s","w","t","d","p","e","o","h"]):["s","t","h"]};
+const plotKind=(f,p)=>((f&&f.pk)||[])[p]||"open",isPaddyPlot=(f,p)=>plotKind(f,p)=="paddy";
+const PKN={open:"露地",house:"ハウス",paddy:"田んぼ"};
+const DOW="日月火水木金土",SEA=["春","夏","秋","冬"],L=i=>String.fromCharCode(65+i);
 const $=id=>document.getElementById(id),p=n=>String(n).padStart(2,"0"),ymd=(y,m,d)=>y+"-"+p(m)+"-"+p(d);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function range(a,b){const r=[];let d=new Date(a+"T00:00:00Z");const e=new Date(b+"T00:00:00Z");
@@ -1317,7 +1346,12 @@ function seedGM(l){if(l.gmv1)return l;seedGMConst();l.crops=l.crops||[];l.vars=l
  l.gmv1=1;return l}
 function isGM(c){const g=((typeof S!="undefined"&&S&&S.lists&&S.lists.crops)||[]).find(x=>x[1].includes(c));return !!g&&g[0]===GM_CAT}
 
-function seedY2(l){return seedGM(seedCorn(seedPR(seedFam(seedNC(seedIcho(seedRP(seedMat(seedY3(seedY2a(l))))))))))}
+function seedFruit(l){if(l.frv1)return l;l.crops=l.crops||[];l.vars=l.vars||{};l.vsrc=l.vsrc||{};l.fam=l.fam||{};l.yields=l.yields||{};l.ysrc=l.ysrc||{};
+ let g=l.crops.find(x=>x[0]=="果樹");if(!g){g=["果樹",[]];l.crops.push(g)}
+ const N={"ゆず":["ミカン科",100,[]],"ブルーベリー":["ツツジ科",40,["ラビットアイ系","ハイブッシュ系"]]};
+ Object.keys(N).forEach(c=>{if(!l.crops.some(x=>x[1].includes(c)))g[1].push(c);if(!l.vars[c]){l.vars[c]=N[c][2];l.vsrc[c]="品種は苗木の名前を手入力してもかまいません"}if(l.fam[c]==null)l.fam[c]=N[c][0];if(l.yields[c]==null){l.yields[c]=N[c][1];l.ysrc[c]="成木のおおまかな目安（資料は未確認）。実績に合わせて書き換えてください"}});
+ l.frv1=1;return l}
+function seedY2(l){return seedFruit(seedGM(seedCorn(seedPR(seedFam(seedNC(seedIcho(seedRP(seedMat(seedY3(seedY2a(l)))))))))))}
 function seedY2a(l){if(l.yv2)return l;l.yields=l.yields||{};l.ysrc=l.ysrc||{};Object.keys(Y2).forEach(c=>{if(l.yields[c]==null){l.yields[c]=Y2[c][0];l.ysrc[c]=Y2[c][1]}});l.yv2=1;return l}
 function migrate(d){
  if(d&&d.v>=5){const n=fresh();if(d.lists)delete d.lists.rpa;d.lists=seedY2(seedYP(seedPest(seedN2(seedN(seedV(seedF(seedY(d.lists||n.lists))))))));d.marks=unpackMarks(d.marks||{});d.hist=d.hist||[];d.prices=d.prices||{};d.misc=d.misc||defMisc();seedP(d);d.mach=d.mach||[];seedM(d);seedPlan(d);seedGeo(d);d.fields=d.fields||n.fields;
@@ -1412,7 +1446,8 @@ function cropCell(g,i,k,s,key){
   o=(v,h)=>`<option value="${esc(v)}"${v==s.crop&&(h||!inH)?" selected":""}>${esc(v)}</option>`;
  return `<div class="cfw"><select ${a}><option value=""></option>`+(hist.length?`<optgroup label="履歴（最近使った順）">${hist.map(v=>o(v,true)).join("")}</optgroup>`:"")+S.lists.crops.map(([n,l])=>`<optgroup label="${esc(n)}">${l.map(v=>o(v,false)).join("")}</optgroup>`).join("")+
   (s.crop&&!all.includes(s.crop)?`<option value="${esc(s.crop)}" selected>${esc(s.crop)}</option>`:"")+`<option value="__other">その他（手入力）</option></select>${fl}</div>`}
-function varCell(g,i,k,s){
+function varCell(g,i,k,s){return varCell0(g,i,k,s)+treeIn(g,i,k,s)}
+function varCell0(g,i,k,s){
  const a=`class="cell" data-g="${g}" data-i="${i}" data-k="${k}" data-f="variety"`,l=S.lists.vars[s.crop];
  if(!l||!l.length)return `<input ${a} value="${esc(s.variety)}">`;
  const x=s.variety&&!l.includes(s.variety)?[s.variety]:[];
@@ -1469,15 +1504,17 @@ const CULT={
 "シイタケ":[["原木栽培（1年目）","s10.5"],["原木栽培（2年目）","s2 t4.5 h6-7.5 h9.5-12"],["原木栽培（3年目以降）","h2-4 h9.5-12"]]};
 /* ===== 収量・栽培カレンダーの空欄を埋めた分（水稲・果樹・花き） ===== */
 Object.assign(CULT,{
-"水稲":[["普通期移植栽培（コシヒカリ）","s3.7 t4.4 h8-8.4"]],
-"温州みかん":[["早生温州","h9.5-10.9"],["普通温州","h10.7-12"]],
-"かき":[["露地栽培（成木）","h9.5-11"]],
-"うめ":[["露地栽培（成木）","h4.7-5.5"]],
-"びわ":[["露地栽培（成木）","h4.5-5.3"]],
-"ぶどう（種なし栽培）":[["デラウェア（露地）","h6.7-7.5"],["巨峰・ピオーネなど（露地）","h7.5-8.7"]],
-"くり":[["露地栽培（成木）","h8.5-9.5"]],
-"いちじく":[["露地栽培（秋果）","h7.5-9.5"]],
-"さんしょう":[["実山椒","h4.7-5.5"]],
+"水稲":[["普通期移植栽培","s3.7 t4.4 h8-8.4"],["普通期移植栽培・田んぼ工程つき","s4.1 w5.0 t5.1-5.5 d6.1-6.5 p7.1 e7.6 o8.4 h8.7-9.5"]],
+"温州みかん":[["早生温州","q2.5-3.5 b1.8-2.4 m6.7-8.5 v3.5-9 h9.5-10.9 r11"],["普通温州","q2.5-3.5 b1.8-2.4 m6.7-8.5 v3.5-9 h10.7-12 r11.9"]],
+"かき":[["露地栽培（成木）","q0-2 b1.8-2.4 m5.8-6.7 v3.5-9 h9.5-11 r11.2"]],
+"うめ":[["露地栽培（成木）","q0-2 b1.8-2.4 v2.5-5 h4.7-5.5 r5.6"]],
+"びわ":[["露地栽培（成木）","b2-2.4 m1.8-2.6 h4.5-5.3 r5.4"]],
+"ぶどう（種なし栽培）":[["デラウェア（露地）","q0-2 b1.8-2.4 m4.5-5.7 v3.5-8.5 h6.7-7.5 r7.6"],["巨峰・ピオーネなど（露地）","q0-2 b1.8-2.4 m4.5-5.7 v3.5-8.5 h7.5-8.7 r8.8"]],
+"くり":[["露地栽培（成木）","q0-2 b1.8-2.4 v4.5-8.5 h8.5-9.5 r9.6"]],
+"いちじく":[["露地栽培（秋果）","q0-2 b1.8-2.4 v4.5-9 h7.5-9.5 r9.6"]],
+"さんしょう":[["実山椒","b1.8-2.4 h4.7-5.5 r5.6"]],
+"ゆず":[["露地栽培（成木）","q2.5-3.5 b1.8-2.4 m6.7-7.7 v3.5-9 h10.5-12 r11.9"]],
+"ブルーベリー":[["露地栽培（成木）","q0-2 b1.8-2.4 v3.5-8 h6.5-8.5 r8.8"]],
 "けいとう":[["春まき栽培","s4.3-5.5 h6.7-9.5"]],
 "コスモス":[["早咲き種（春まき）","s3.5-4.5 h5.7-7"],["秋咲き種（夏まき）","s6.5-7 h9-10.9"]],
 "つつじ":[["露地栽培（花木）","h3.6-4.8"]],
@@ -1487,7 +1524,7 @@ Object.assign(CULT,{
 (()=>{const G="時期は一般的な目安です（資料で確認した数字ではありません）。",A=(c,n,u)=>{(TSRC[c]=TSRC[c]||[]).push([n,u||""])};
  A("水稲","滋賀県農業技術振興センター（令和2年）水稲の播種4月下旬・移植5月中旬・出穂7月下旬・コシヒカリ成熟8月下旬の記載を元に、収穫を9月上旬としました","https://www.pref.shiga.lg.jp/file/attachment/5196001.pdf");
  A("水稲","農林水産省 近畿農政局『令和5年産水稲の作況』大阪府 10aあたり503kg","https://www.maff.go.jp/kinki/press/toukei/toukeikikaku/attach/pdf/231110-1.pdf");
- ["温州みかん","かき","うめ","びわ","くり","いちじく","さんしょう"].forEach(c=>A(c,"栽培カレンダー："+G));
+ ["温州みかん","かき","うめ","びわ","くり","いちじく","さんしょう","ゆず","ブルーベリー"].forEach(c=>A(c,"栽培カレンダー："+G));
  A("温州みかん","農林水産省 作物統計 令和7年産 みかん 10aあたり（普通温州1,750kg・早生温州2,090kg）","https://www.maff.go.jp/j/tokei/kouhyou/sakumotu/sakkyou_kazyu/pdf/syukaku_mikan_25.pdf");
  A("かき","農林水産省 近畿農政局 かき 10aあたり収量（和歌山県・奈良県）","https://www.maff.go.jp/kinki/toukei/d/pdf/06_kaki.pdf");
  A("うめ","農林水産省 作物統計 令和7年産 びわ・うめ 10aあたり収量","https://www.maff.go.jp/j/tokei/kekka_gaiyou/sakumotu/sakkyou_kajyu/biwa_momo_ume/r7/index.html");
@@ -1526,14 +1563,17 @@ async function setRidgeCount(g,p,n){const f=S.fields[g],rs=ridgesOf(f,p),cur=rs.
   f.ridges.splice(pos,0,...add)}
  render();save()}
 
-const mapFix=(g,p)=>{const f=S.fields[g];return !!f&&f.src=="map"&&+(f.pm||[])[p]>0};
-function plotCell(g,p,n){const fx=mapFix(g,p);return `<div class="fl">${L(p)}</div><input class="rc" type="number" min="1" max="80" data-rc="${g}" data-rp="${p}" value="${n}" title="${fx?"MAP入力の畝数で固定":"畝数"}"${fx?" readonly":""}>`}
+const mapFix=(g,p)=>{const f=S.fields[g];return !!f&&!isPaddyPlot(f,p)&&f.src=="map"&&+(f.pm||[])[p]>0};
+function plotCell(g,p,n){const fx=mapFix(g,p);if(isPaddyPlot(S.fields[g],p))return `<div class="fl">${L(p)}</div><div class="pdy" title="田んぼ：1区画＝1段">田んぼ</div>`;return `<div class="fl">${L(p)}</div><input class="rc" type="number" min="1" max="80" data-rc="${g}" data-rp="${p}" value="${n}" title="${fx?"MAP入力の畝数で固定":"畝数"}"${fx?" readonly":""}>`}
 function ridgeName(g,i){return `<div>${esc(RN(g,i))}</div>`}
 function ridgeNs(g,i,r){return `<select class="ns" data-g="${g}" data-i="${i}" data-f="nslots" title="作付けする野菜の数">`+[1,2,3,4].map(n=>`<option value="${n}"${(r.n||2)==n?" selected":""}>${n}</option>`).join("")+"</select>"}
 
 function seaCell(g,i,k,s){
  return `<select class="cell" data-g="${g}" data-i="${i}" data-k="${k}" data-f="season"><option value=""></option>`+SEA.map((n,j)=>`<option value="${j}"${(s.season===j)?" selected":""}>${n}</option>`).join("")+"</select>"}
-function cultCell(g,i,k,s){
+function cultCell(g,i,k,s){return cultCell0(g,i,k,s)}
+function treeIn(g,i,k,s){const l=luOf(s.crop);if(!l||!l.tree)return"";const a=treeAge(s),at=`data-g="${g}" data-i="${i}" data-k="${k}"`;
+ return `<div class="fry"><input type="number" min="1900" max="2100" ${at} data-f="py" value="${s.py==null?"":s.py}" placeholder="植付年" title="植え付けた年">年<input type="number" min="0" ${at} data-f="tn" value="${s.tn==null?"":s.tn}" placeholder="本数" title="本数">本</div>`+(a==null?"":`<div class="fry"><span class="age">${a<0?"植付前":a<=0?"植付年":a+"年生"}${a>=0&&a<l.mat?"・成園まであと"+(l.mat-a)+"年":a>=l.mat?"・成園":""}</span></div>`)}
+function cultCell0(g,i,k,s){
  const a=`class="cell" data-g="${g}" data-i="${i}" data-k="${k}" data-f="cult"`,l=cultOpts(s.crop,g);
  if(!l.length)return `<input ${a} value="${esc(s.cult||"")}">`;
  const nm=l.map(x=>x[0]);if(s.cult&&!nm.includes(s.cult))nm.push(s.cult);
@@ -1544,8 +1584,8 @@ async function fillCult(key,spec){
  const M=S.marks[key]=S.marks[key]||{},pre=String(V.y);
  if(Object.keys(M).some(d=>d.startsWith(pre))&&!(await ask(V.y+"年のこの段の色を、選んだ栽培の標準時期に置き換えますか？")))return false;
  Object.keys(M).forEach(d=>{if(d.startsWith(pre))delete M[d]});
- spec.split(" ").forEach(x=>{const m=x.match(/^([sth])([\d.]+)(?:-([\d.]+))?$/);if(!m)return;
-  const f=pos2date(V.y,+m[2]),b=m[3]?+m[3]:null,t=b==null?addDays(f,6):(b>=12?ymd(V.y,12,31):addDays(pos2date(V.y,b),-1));if(t<f)return;
+ spec.split(" ").forEach(x=>{const m=x.match(/^([sthwdpeoqbmvr])([\d.]+)(?:-([\d.]+))?$/);if(!m)return;
+  const f=pos2date(V.y,+m[2]),b=m[3]?+m[3]:null,t=b==null?(isEvK(m[1])?f:addDays(f,6)):(b>=12?ymd(V.y,12,31):addDays(pos2date(V.y,b),-1));if(t<f)return;
   range(f,t).forEach(d=>{M[d]=m[1]})});
  return true}
 let PEND={},PENDM="";
@@ -1561,19 +1601,40 @@ function setRun(key,kind,mon,a,n){
  const t0=ymd(V.y,mon,a);
  S.under=S.under||{};const U=S.under[key]=S.under[key]||{};
  for(let i=0;i<n;i++){const t=addDays(t0,i);if(kind=="x"){delete M[t];delete U[t]}else{const K=kind.toUpperCase();if(M[t]&&M[t].toUpperCase()!==K)U[t]=M[t];else if(!M[t])delete U[t];M[t]=K}}}
-const RK={},RM={};
+const RK={},RM={},EVC={p:"肥",e:"出",q:"剪",b:"元",m:"摘",v:"防",r:"礼"};
 function rowState(key){
  const kind=RK[key]||"s",q=PEND[key]||{},mm=RM[key];let mon=null,show="";
  if(mm){mon=mm;show=mm}
  else if(V.mode=="month"){mon=V.m}
  else{const r=kind=="x"?null:firstRun(key,kind,V.y);if(r){mon=r.m;show=r.m}}
  return{kind,mon,show,run:(mon&&kind!="x")?runOf(key,kind,V.y,mon):null,q}}
-function dayCell(key){
- const st=rowState(key),kind=st.kind,mon=st.mon,run=st.run,q=st.q,nd=mon?new Date(V.y,mon,0).getDate():31,a=run?run.a:(q.a||""),n=run?run.n:(q.n||1),
- ks=Object.keys(NM).map(k=>`<option value="${k}"${kind==k?" selected":""}>${NM[k]}</option>`).join(""),
+function dayCell(key,crop){
+ const st=rowState(key),kl=kindList(crop),kind=kl.includes(st.kind)?st.kind:"s",mon=st.mon,run=st.run,q=st.q,nd=mon?new Date(V.y,mon,0).getDate():31,a=run?run.a:(q.a||""),n=run?run.n:(q.n||1),
+ ks=kl.map(k=>`<option value="${k}"${kind==k?" selected":""}>${kindName(k,crop)}</option>`).join(""),
  ms='<option value=""></option>'+[...Array(12)].map((_,i)=>`<option value="${i+1}"${st.show==i+1?" selected":""}>${i+1}</option>`).join(""),
  ds='<option value=""></option>'+[...Array(nd)].map((_,i)=>`<option value="${i+1}"${a==i+1?" selected":""}>${i+1}</option>`).join("");
  return `<td class="c7"><select class="mini" data-p="k" data-key="${key}" title="作業">${ks}</select> <select class="mini" data-p="m" data-key="${key}">${ms}</select> <select class="mini" data-p="a" data-key="${key}">${ds}</select> <input class="mini dn" type="number" min="1" max="366" data-p="n" data-key="${key}" value="${n}" title="日数"></td>`}
+function legUpd(pd,fr){const b='<span class="sw s"></span>播種<span class="sw t"></span>定植<span class="sw h"></span>収穫';
+ $("leg").innerHTML=pd?b.replace("定植","定植（田植え）").replace("収穫","収穫（稲刈り）")+' <span class="sw ep"></span>穂肥<span class="sw ee"></span>出穂<br><span class="lgw"><b>田んぼの水</b><span class="sw wbw"></span>入水・代かき<span class="sw wbf"></span>湛水<span class="sw wbd"></span>中干し<span class="sw wbi"></span>間断かんがい<span class="sw wbo"></span>落水</span>':b;
+ $("leg").innerHTML+=fr?'<br><span class="lgw"><b>果樹</b><span class="sw eq"></span>剪定<span class="sw eb"></span>元肥<span class="sw em"></span>摘果<span class="sw ev"></span>防除<span class="sw er"></span>お礼肥</span>':""}
+function waterMap(key,y){
+ const M=S.marks[key]||{},ds=Object.keys(M).filter(d=>d.startsWith(String(y))).sort(),o={};
+ const by=c=>ds.filter(d=>M[d].toLowerCase()==c);
+ const W=by("w"),D=by("d"),O=by("o"),T=by("t"),H=by("h");
+ const Hf=H[0],Of=O[0];
+ let st=null;if(W.length)st=addDays(W[W.length-1],1);else if(T.length)st=T[0];
+ if(!st&&!D.length&&!O.length)return o;
+ W.forEach(d=>o[d]="w");
+ let end=Hf?addDays(Hf,-1):(Of?addDays(Of,9):(D.length?addDays(D[D.length-1],30):null));
+ if(st&&end){
+  const e1=D.length?addDays(D[0],-1):(Of?addDays(Of,-1):end);
+  for(let d=st;d<=e1&&d<=end;d=addDays(d,1))o[d]="f";
+  if(D.length){for(let d=addDays(D[D.length-1],1);d<=(Of?addDays(Of,-1):end);d=addDays(d,1))o[d]="i"}
+ }
+ D.forEach(d=>o[d]="d");
+ if(Of){const e=Hf?addDays(Hf,-1):addDays(Of,9);for(let d=Of;d<=e;d=addDays(d,1))o[d]="o"}
+ return o}
+const WBN={w:"入水・代かき",f:"湛水",d:"中干し",i:"間断かんがい",o:"落水"},WBC={w:"入",d:"干",o:"落"};
 function showUpd(){const e=(typeof expGet=="function")?expGet():{},t=e.at?new Date(e.at):null;const lb=document.querySelector(".upd span:first-child");if(lb)lb.textContent="最終書き出し";$("updv").textContent=t?(innerWidth<900?"":t.getFullYear()+"/")+p(t.getMonth()+1)+"/"+p(t.getDate())+" "+p(t.getHours())+":"+p(t.getMinutes()):"未書き出し"}
 function render(){
  showUpd();UC=useCounts();
@@ -1598,19 +1659,29 @@ function render(){
   plist.forEach(p=>{const rs=ridgesOf(f,p),vis=[];
    rs.forEach(([r,i],ri)=>{const nn=r.n||2;for(let k=0;k<nn;k++)if(seaOK(r.slots[k]))vis.push({r,i,k,nn})});
    if(!vis.length)return;
+   const vspan=vis.reduce((a,z)=>a+((luOf(z.r.slots[z.k].crop)||{}).water?2:1),0);
    vis.forEach((o,vi)=>{const{r,i,k}=o,sl=r.slots[k],fo=vi==0||vis[vi-1].i!=i,lo=vi==vis.length-1||vis[vi+1].i!=i,same=vis.filter(z=>z.i==i),ix=same.indexOf(o);rows++;
-   const key=r.id+"-"+k,s=sl,se=(s.season===""||s.season==null)?"":" se"+s.season;
-   h+=`<tr class="${vi==0?"fs":fo?"rs":""}${se}">`;
-   if(vi==0)h+=`<td class="c1" rowspan="${vis.length}">${plotCell(g,p,rs.length)}</td>`;
-   h+=`<td class="c2${lo?"":" c2m"}${SELR.includes(g+":"+i)?" sel":""}" data-sg="${g}" data-si="${i}">${fo?ridgeName(g,i):""}${ix==(same.length>1?1:0)?ridgeNs(g,i,r):""}</td>`;
-   h+=`<td class="c3">${cropCell(g,i,k,s,key)}</td><td class="c4">${varCell(g,i,k,s)}</td><td class="c6">${cultCell(g,i,k,s)}</td>${dayCell(key)}<td class="c5">${seaCell(g,i,k,s)}</td>`;
+   const key=r.id+"-"+k,s=sl,se=(s.season===""||s.season==null)?"":" se"+s.season,lu=luOf(s.crop),wt=lu&&lu.water,pw=wt?(rows++,' rowspan="2"'):"";
+   {const kl0=kindList(s.crop);if(!kl0.includes(RK[key]||"s"))RK[key]=kl0[0];else if(!RK[key])RK[key]=kl0[0]}
+   h+=`<tr class="${vi==0?"fs":fo?"rs":""}${se}${wt?" pwm":""}${lu&&lu.tree?" fr":""}">`;
+   if(vi==0)h+=`<td class="c1" rowspan="${vspan}">${plotCell(g,p,rs.length)}</td>`;
+   h+=`<td class="c2${lo?"":" c2m"}${SELR.includes(g+":"+i)?" sel":""}"${pw} data-sg="${g}" data-si="${i}">${fo?ridgeName(g,i):""}${ix==(same.length>1?1:0)?ridgeNs(g,i,r):""}</td>`;
+   h+=`<td class="c3"${pw}>${cropCell(g,i,k,s,key)}</td><td class="c4"${pw}>${varCell(g,i,k,s)}</td><td class="c6"${pw}>${cultCell(g,i,k,s)}</td>${dayCell(key,s.crop).replace('<td class="c7"','<td class="c7"'+pw)}<td class="c5"${pw}>${seaCell(g,i,k,s)}</td>`;
    const M=S.marks[key]||{},ds=Object.keys(M).filter(d=>d.startsWith(String(V.y))).sort(),fi=ds[0],la=ds[ds.length-1];
    cols.forEach(c=>{const m=M[c.t],pk=P&&P.r==key&&P.t==c.t,k=m?m.toLowerCase():"",act=!!m&&m!==k;let cl=m?" "+k:"",tx="",st="";
-    if(m){cl+=" cbar"+(act?"":" cpl");if(!act){if(M[addDays(c.t,-1)]!==m)cl+=" cbl";if(M[addDays(c.t,1)]!==m)cl+=" cbr"}if(act&&(k=="s"||k=="t")&&M[addDays(c.t,-1)]!==m){cl+=" mk mk"+k}}
+    if(m&&isEvK(k)){const pv=M[addDays(c.t,-1)]===m,nx=M[addDays(c.t,1)]===m;
+     if("wdo".includes(k))cl=(fi&&c.t>fi&&c.t<la)?" ln":"";
+     else if(pv||nx){cl=" cbar evbar ev"+k+(act?"":" cpl");if(!act){if(!pv)cl+=" cbl";if(!nx)cl+=" cbr"}}
+     else{cl=" evc ev"+k+(act?"":" evpl");tx=yr?"":(EVC[k]||"")}}
+    else if(m){cl+=" cbar"+(act?"":" cpl");if(!act){if(M[addDays(c.t,-1)]!==m)cl+=" cbl";if(M[addDays(c.t,1)]!==m)cl+=" cbr"}if(act&&(k=="s"||k=="t")&&M[addDays(c.t,-1)]!==m){cl+=" mk mk"+k}}
     else if(fi&&c.t>fi&&c.t<la)cl+=" ln";
-    h+=`<td data-r="${key}" data-t="${c.t}" class="c${cl}${c.t==TD?" today":""}${yr&&c.d==1?" ms":""}${!yr&&!m&&(c.w==0||c.w==6)?" we":""}${pk?" pk":""}"${m?` title="${{s:"播種",t:"定植",h:"収穫"}[k]}（${act?"個別に設定":"予定"}）"`:""}>${tx}</td>`});
-   h+="</tr>"})})});
- selText();$("tb").innerHTML=h+"</tbody>";yearBanner();$("tb").className=(yr?"yr":"")+(V.hide?" hc":"");$("bcol").innerHTML=V.hide?'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>入力表示':'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>入力非表示';
+    h+=`<td data-r="${key}" data-t="${c.t}" class="c${cl}${c.t==TD?" today":""}${yr&&c.d==1?" ms":""}${!yr&&!m&&(c.w==0||c.w==6)?" we":""}${pk?" pk":""}"${m?` title="${kindName(k,s.crop)}（${act?"個別に設定":"予定"}）"`:""}>${tx}</td>`});
+   h+="</tr>";
+   if(wt){const WM=waterMap(key,V.y);h+=`<tr class="pw${se}">`;
+    cols.forEach(c=>{const w=WM[c.t],pv=WM[addDays(c.t,-1)];h+=`<td class="wbc${w?" wb wb"+w:""}${c.t==TD?" today":""}${yr&&c.d==1?" ms":""}"${w?` title="${WBN[w]}"`:""}>${!yr&&w&&WBC[w]&&pv!==w?WBC[w]:""}</td>`});
+    h+="</tr>"}
+   })})});
+ selText();$("tb").innerHTML=h+"</tbody>";legUpd(!!document.querySelector("#tb tr.pw"),!!document.querySelector("#tb tr.fr"));yearBanner();$("tb").className=(yr?"yr":"")+(V.hide?" hc":"");$("bcol").innerHTML=V.hide?'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>入力表示':'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>入力非表示';
  $("tb").style.width=((V.hide?164:410)+(V.hide?0:196)+cols.length*cw)+"px";$("tb").style.setProperty("--prh",Math.min(11,170/(rows+2)).toFixed(1)+"mm");
 }
 $("tb").onchange=async e=>{const t=e.target;if(isPast())return;if(t.tagName!="INPUT"&&t.tagName!="SELECT")return;
@@ -1632,7 +1703,8 @@ $("tb").onchange=async e=>{const t=e.target;if(isPast())return;if(t.tagName!="IN
  if(f=="crop"){
   if(t.value=="__other"){EDIT[key]=1;render();const el=document.querySelector(`input[data-g="${t.dataset.g}"][data-i="${t.dataset.i}"][data-k="${k}"][data-f="crop"]`);if(el)el.focus();return}
   if(t.value!=s.crop){s.variety="";s.cult="";const M=S.marks[key];if(M){Object.keys(M).forEach(d=>{if(d.startsWith(String(V.y)))delete M[d]});if(!Object.keys(M).length)delete S.marks[key]}if(!t.value){delete s.season;delete s.fp}}
-  s.crop=t.value;if(s.crop)S.hist=[s.crop].concat((S.hist||[]).filter(x=>x!=s.crop)).slice(0,10);delete EDIT[key];render();save();if(allCult(s.crop).length)msg(s.crop+"：右の「栽培」を選ぶと、播種・定植・収穫の色が入ります");return}
+  delete RK[key];s.crop=t.value;if(s.crop)S.hist=[s.crop].concat((S.hist||[]).filter(x=>x!=s.crop)).slice(0,10);delete EDIT[key];render();save();if(allCult(s.crop).length)msg(s.crop+"：右の「栽培」を選ぶと、"+(luOf(s.crop)?"田んぼの工程":"播種・定植・収穫")+"の色が入ります");return}
+ if(f=="py"||f=="tn"){s[f]=t.value===""?"":Math.max(0,Math.round(+t.value)||0);render();save();return}
  if(f=="season"){s.season=t.value===""?"":+t.value;render();save();return}
  if(f=="cult"){const c=allCult(s.crop).find(x=>x[0]==t.value),prev=s.cult;s.cult=t.value;
   if(c){if(!(await fillCult(key,c[1]))){s.cult=prev;render();return}render()}save();return}
@@ -1661,7 +1733,7 @@ $("pv").onclick=()=>step(-1);$("nx").onclick=()=>step(1);
 /* 設定画面 */
 const lines=v=>v.split("\n").map(x=>x.trim()).filter(Boolean);
 function posLab(p,end){const q=end?p-0.001:p,m=Math.floor(q),fr=q-m;return (m+1)+"月"+(end?(fr>0.9?"末":fr>0.4?"中旬":"上旬"):(fr<0.25?"上旬":fr<0.75?"中旬":"下旬"))}
-function specText(spec){const o={s:[],t:[],h:[]};spec.split(" ").forEach(x=>{const m=x.match(/^([sth])([\d.]+)(?:-([\d.]+))?$/);if(!m)return;const a=+m[2],b=m[3]?+m[3]:null;o[m[1]].push(b==null?posLab(a):posLab(a)+"〜"+posLab(b,true))});return o}
+function specText(spec){const o={s:[],t:[],h:[]};spec.split(" ").forEach(x=>{const m=x.match(/^([sth])([\d.]+)(?:-([\d.]+))?$/);if(!m)return;if(!o[m[1]])return;const a=+m[2],b=m[3]?+m[3]:null;o[m[1]].push(b==null?posLab(a):posLab(a)+"〜"+posLab(b,true))});return o}
 function fertTable(sub,si){
  const k10=sub.unit=="10a",row=(kind,r,j)=>`<tr><td>${kind=="base"?"元肥":"追肥"}</td><td><input data-s="fert" data-sub="${si}" data-k="${kind}" data-r="${j}" data-c="n" value="${esc(r[0])}" style="width:170px"></td><td><input type="number" min="0" step="any" data-s="fert" data-sub="${si}" data-k="${kind}" data-r="${j}" data-c="kg" value="${r[1]}" style="width:64px"></td>${k10?`<td>${Math.round(r[1]/10*100)/100}</td>`:""}<td><input data-s="fert" data-sub="${si}" data-k="${kind}" data-r="${j}" data-c="note" value="${esc(r[2]||"")}" style="width:240px"></td><td><button data-fdel="${kind}:${j}" data-sub="${si}">✕</button></td></tr>`;
  return `<div class="bar"><b>${esc(sub.name||"施肥例")}</b><span class="hint">（${k10?"10aあたり":"1アールあたり"}）</span></div>
@@ -1776,6 +1848,7 @@ async function fmApply(g,st,ex){const f=S.fields[g],fd=st.fields[0];
  for(let k=0;k<n;k++){const beds=(ex.plots[k]&&ex.plots[k].beds)||[];
   ridgesOf(f,k).forEach(([r],j)=>{const b=beds[j];if(b){r.m2=b.area_m2;r.wd=b.width_m;r.len=b.length_m}else{delete r.m2;delete r.wd;delete r.len}})}
  f.plots=n;f.pa=(f.pa||[]).slice(0,n);f.pd=(f.pd||[]).slice(0,n);
+ for(let k=0;k<n;k++)if(isPaddyPlot(f,k)){const rs=ridgesOf(f,k);if(rs.length>1){const ids=new Set(rs.slice(1).map(([r])=>r.id));purgeRidges(g,ids);f.ridges=f.ridges.filter(r=>!ids.has(r.id))}}
  f.pm=ex.plots.slice(0,n).map(p=>p.area_m2||0);f.src="map";
  f.fm={plots:fd.plots.slice(0,n),cur:fd.cur,view:st.view||null};
  const nm=(fd.name||"").trim();if(nm&&nm!==f.name){f.name=nm;fsel()}
@@ -1801,10 +1874,11 @@ function openFieldMap(g){
 const PLD=10;
 function plotDim(f,k){const d=(f.pd||[])[k]||{},o=(f.pa||[])[k],legacy=!(d.h>0||d.w>0)&&o!==""&&o!=null&&+o>0;return{h:d.h===""||d.h==null?(legacy?"":PLD):+d.h,w:d.w===""||d.w==null?(legacy?"":PLD):+d.w,legacy}}
 function plotArea(f,k){if(f.src=="map"){const a=+(f.pm||[])[k];if(a>0)return a}const m=plotDim(f,k);if(m.h>0&&m.w>0)return Math.round(m.h*m.w*10)/10;if(m.legacy)return +f.pa[k];return 0}
-function plotRows(f,i){const n=plotCount(f);let tot=0;const mp=f.src=="map";
- const rows=[...Array(n).keys()].map(k=>{if(mp){const ar=plotArea(f,k);tot+=ar;const nb=ridgesOf(f,k).length;return `<div class="pr"><span class="pk">${L(k)}区</span><span class="pdm">${+(f.pm||[])[k]>0?"MAP入力の値":"MAP未入力"}</span><span class="pdm">畝 ${nb}本</span><span class="par">${ar?`<b>${ar.toLocaleString("en-US",{minimumFractionDigits:1,maximumFractionDigits:1})}</b> ㎡<small>${(ar/100).toFixed(1)} a／${(ar/991.7).toFixed(1)} 反</small>`:"—"}</span></div>`}
+const pkSel=(f,i,k)=>`<select class="pks" data-s="fpk" data-gi="${i}" data-pi="${k}" title="土地の種類">`+Object.keys(PKN).map(x=>`<option value="${x}"${plotKind(f,k)==x?" selected":""}>${PKN[x]}</option>`).join("")+"</select>";
+function plotRows(f,i){const n=plotCount(f);let tot=0;const mp=f.src=="map"&&[...Array(n).keys()].every(k=>!isPaddyPlot(f,k)||true);
+ const rows=[...Array(n).keys()].map(k=>{if(mp){const ar=plotArea(f,k);tot+=ar;const nb=ridgesOf(f,k).length,pd=isPaddyPlot(f,k);return `<div class="pr"><span class="pk">${L(k)}区</span>${pkSel(f,i,k)}${pd?'<span class="pdm">1区画＝1段</span>':`<span class="pdm">${+(f.pm||[])[k]>0?"MAP入力の値":"MAP未入力"}</span><span class="pdm">畝 ${nb}本</span>`}<span class="par">${ar?`<b>${ar.toLocaleString("en-US",{minimumFractionDigits:1,maximumFractionDigits:1})}</b> ㎡<small>${(ar/100).toFixed(1)} a／${(ar/991.7).toFixed(1)} 反</small>`:"—"}</span></div>`}
   const d=plotDim(f,k);const ar=plotArea(f,k);tot+=ar;const leg=d.legacy;
-  return `<div class="pr"><span class="pk">${L(k)}区</span><span class="pc"><span class="pdm">たて</span><input type="number" min="0" step="any" inputmode="decimal" data-s="fpd" data-gi="${i}" data-pi="${k}" data-k="h" value="${d.h}" placeholder="10"><span class="pdm">m</span></span><span class="pc"><span class="pdm">よこ</span><input type="number" min="0" step="any" inputmode="decimal" data-s="fpd" data-gi="${i}" data-pi="${k}" data-k="w" value="${d.w}" placeholder="10"><span class="pdm">m</span></span><span class="par">${ar?`<b>${ar.toLocaleString("en-US",{minimumFractionDigits:1,maximumFractionDigits:1})}</b> ㎡<small>${(ar/100).toFixed(1)} a／${(ar/991.7).toFixed(1)} 反${leg?"（旧入力の面積）":""}</small>`:"—"}</span></div>`}).join("");
+  return `<div class="pr"><span class="pk">${L(k)}区</span>${pkSel(f,i,k)}<span class="pc"><span class="pdm">たて</span><input type="number" min="0" step="any" inputmode="decimal" data-s="fpd" data-gi="${i}" data-pi="${k}" data-k="h" value="${d.h}" placeholder="10"><span class="pdm">m</span></span><span class="pc"><span class="pdm">よこ</span><input type="number" min="0" step="any" inputmode="decimal" data-s="fpd" data-gi="${i}" data-pi="${k}" data-k="w" value="${d.w}" placeholder="10"><span class="pdm">m</span></span><span class="par">${ar?`<b>${ar.toLocaleString("en-US",{minimumFractionDigits:1,maximumFractionDigits:1})}</b> ㎡<small>${(ar/100).toFixed(1)} a／${(ar/991.7).toFixed(1)} 反${leg?"（旧入力の面積）":""}</small>`:"—"}</span></div>`}).join("");
  return `<div class="plb"><div class="plh"><b>${esc(f.name)} の区画</b><span class="plt">合計 <b>${tot.toLocaleString("en-US",{minimumFractionDigits:1,maximumFractionDigits:1})}</b> ㎡（${(tot/100).toFixed(1)} a）</span></div><div class="pgrid">${rows}</div></div>`}
 
 /* ===== バックアップ ===== */
@@ -2180,6 +2254,7 @@ $("set").onchange=async e=>{const t=e.target,s=t.dataset.s,f=S.fields[SF];
  else if(s=="faddr"){const fl=S.fields[+t.dataset.gi],k=t.dataset.fk;if(k=="addr"){fl.addr=t.value;delete fl.glat;delete fl.glon}else if(k=="name"){const v=t.value.trim();if(v)fl.name=v;else t.value=fl.name;fsel()}else if(t.value==="")delete fl[k];else fl[k]=+t.value;save();return}
  else if(s=="bm"){const B=bmGet(),l=t.dataset.bl;if(l=="rent"){B.rent=t.value===""?"":Math.max(0,+t.value||0)}else{const r=(B[l]||[])[+t.dataset.bi];if(!r)return;const f=t.dataset.bf;r[f]=(f=="n"||f=="note")?t.value:(t.value===""?"":Math.max(0,+t.value||0))}save();renderSet();return}
  else if(s=="fsrc"){const f=S.fields[+t.dataset.gi];if(f&&t.checked){if(isPast()){msg("過去の年は編集できません");renderSet();return}f.src=t.value=="map"?"map":"plot";save();render();renderSet();msg(f.name+"："+(f.src=="map"?"MAP入力の面積・畝を使います":"区画入力（たて×よこ）を使います")+(f.src=="map"&&!f.fm?"。右の丸いMAPボタンで区画を囲んでください":""));if(f.src=="map"&&!f.fm)openFieldMap(+t.dataset.gi)}return}
+ else if(s=="fpk"){setPlotKind(+t.dataset.gi,+t.dataset.pi,t.value);return}
  else if(s=="fpd"){const f=S.fields[+t.dataset.gi];if(f){const k=+t.dataset.pi;f.pd=f.pd||[];f.pd[k]=f.pd[k]||{};const v=t.value===""?"":Math.max(0,+t.value||0);const m0=plotDim(f,k);f.pd[k]={h:m0.h,w:m0.w};f.pd[k][t.dataset.k]=v;f.pa=f.pa||[];f.pa[k]=plotArea(f,k)||"";save();renderSet()}return}
  else if(s=="fhouse"){const f=S.fields[+t.dataset.gi];if(f){f.house=t.value=="1";save();render();msg(f.name+"："+(f.house?"ハウス":"露地")+"にしました。栽培の選択肢が変わります")}return}
  else if(s=="fplots"){if(isPast()){msg("過去の年は編集できません");renderSet();return}const g=+t.dataset.gi;await setPlotCount(g,+t.value);save();renderSet();return}
@@ -2243,15 +2318,23 @@ function cropRate(c){const r=(S.lists.rate||{})[c];return r>0?r:(S.shuhin>0?S.sh
 function cropPrice(c){const v=(S.lists.price||{})[c];return v>0?+v:null}
 function cropRP(c){const o=(S.lists.rp||{})[c];return o&&o.p>0?+o.p:null}
 function feeRate(){const v=parseFloat(S.fee);return v>=0&&v<100?v:20}
-function ridgeM2(g,i){const f=S.fields[g],r=f&&f.ridges[i];if(!r)return 0;if(f.src=="map"&&r.m2>0)return r.m2;const p=plotOf(r),n=ridgesOf(f,p).length,ar=plotArea(f,p);return n>0&&ar>0?ar/n:0}
+function ridgeM2(g,i){const f=S.fields[g],r=f&&f.ridges[i];if(!r)return 0;if(f.src=="map"&&r.m2>0&&!isPaddyPlot(f,plotOf(r)))return r.m2;const p=plotOf(r),n=ridgesOf(f,p).length,ar=plotArea(f,p);return n>0&&ar>0?ar/n:0}
+async function setPlotKind(g,p,v){const f=S.fields[g];if(!f)return;f.pk=f.pk||[];while(f.pk.length<plotCount(f))f.pk.push("open");
+ if(v=="paddy"){const rs=ridgesOf(f,p);if(rs.length>1){const rem=rs.slice(1),used=rem.some(([r])=>[0,1,2,3].some(k=>slotUsed(r,k)));
+   if(used&&!(await ask("田んぼは1区画＝1段です。2本目以降の畝（"+rem.map(([r,i])=>RN(g,i)).join("、")+"）に入力済みの内容があります。削除して田んぼにしますか？\n栽培計画の入力内容が消えます（元に戻せません）。"))){renderSet();return}
+   const ids=new Set(rem.map(([r])=>r.id));purgeRidges(g,ids);f.ridges=f.ridges.filter(r=>!ids.has(r.id))}
+  ridgesOf(f,p).forEach(([r])=>{delete r.m2;delete r.wd;delete r.len;r.n=Math.max(r.n||2,1)})}
+ f.pk[p]=v;render();save();renderSet();if(v!="paddy"&&f.src=="map")msg("畝の本数はMAPボタンから反映してください")}
 function ycalc(s,ra){
- const rec=(s.yd&&s.yd[V.y])||{},cy=cultYP(s.crop,s.cult),a=cy.y!=null?cy.y:(S.lists.yields||{})[s.crop],auto=a==null?null:(ra>0?a*ra/100:a/10),has=v=>v!=null&&v!=="";
+ const rec=(s.yd&&s.yd[V.y])||{},cy=cultYP(s.crop,s.cult),a=cy.y!=null?cy.y:(S.lists.yields||{})[s.crop],auto=a==null?null:(ra>0?a*ra/100:a/10)*treeFac(s),has=v=>v!=null&&v!=="";
  const est=auto,act=has(rec.act)?+rec.act:null,rp=cropRP(s.crop),ret=rp!=null,pr=ret?rp:cropPrice(s.crop),pm=ret?cy.p*(1-feeRate()/100):cy.p*chMult(),rate=cropRate(s.crop),hr=cropHRate(s.crop),base=act!=null?act:est,sell=base!=null?base*rate/100:null,real=sell!=null?sell*hr/100:null;
  return{rec,auto,est,act,pr,pm,cp:cy.p,ret,rate,hr,base,sell,real,rev:real!=null&&pr!=null?real*pr*pm:null,fee:ret&&real!=null?real*pr*cy.p*feeRate()/100:0}}
 function hspan(key){const M=S.marks[key]||{},ds=Object.keys(M).filter(d=>d.startsWith(String(V.y))&&(M[d]=="h"||M[d]=="H")).sort();return ds.length?fmtD(ds[0])+"〜"+fmtD(ds[ds.length-1]):""}
 function yrecs(){const L=[];
  S.fields.forEach((f,g)=>{if(!f.on)return;if(V.yf>=0&&g!=V.yf)return;f.ridges.forEach((r,i)=>r.slots.forEach((s,k)=>{if(k>=(r.n||2)||!s.crop||isGM(s.crop))return;L.push({g,i,k,f,r,s,key:r.id+"-"+k,c:ycalc(s,ridgeM2(g,i))})}))});
  return L}
+const ybag=(crop,kg,m2)=>{const l=luOf(crop);if(!l||!l.bag||kg==null||!(kg>=0))return"";const a10=m2>0?Math.round(kg/(m2/1000)):null;return `<small class="fmh">${a10==null?"":a10.toLocaleString("en-US")+" kg/10a・"}${(kg/l.bag).toFixed(1)} 俵</small>`};
+const ytree=(s,kg)=>{const l=luOf(s.crop);if(!l||!l.tree)return"";const a=treeAge(s),fc=treeFac(s),n=+s.tn||0;return (a!=null&&fc<1?`<small class="fmh">${a<0?"植付前":a+"年生"}・成木の${Math.round(fc*100)}%</small>`:"")+(n>0&&kg!=null&&kg>=0?`<small class="fmh">${n}本・${(kg/n).toFixed(1)} kg/本</small>`:"")};
 const revCell=c=>fmtYen(c.rev)+(c.ret&&c.fee>0?`<small class="fmh" style="color:#b5651d">手数料 −${fmtYen(c.fee)}</small>`:"");
 function ysummary(L){
  const sm=fn=>L.reduce((t,x)=>t+(fn(x)||0),0),feeSum=sm(x=>x.c.fee),np=[...new Set(L.filter(x=>x.c.pr==null).map(x=>x.s.crop))],ne=L.filter(x=>x.c.est==null).length;
@@ -2261,7 +2344,7 @@ function ysummary(L){
  const G={},ord=[];
  L.forEach(x=>{const k=x.s.crop,g=G[k]=G[k]||(ord.push(k),{crop:k,real:0,m2:0,rev:0,fee:0,ret:false,any:false});g.m2+=ridgeM2(x.g,x.i)||0;g.real+=x.c.real||0;g.rev+=x.c.rev||0;g.fee+=x.c.fee||0;if(x.c.ret)g.ret=true;if(x.c.real!=null)g.any=true});
  let h='<thead><tr><th>農産物</th><th class="n">実売収量(kg)</th><th class="n">面積(a)</th><th class="n">単価(円/kg)</th><th class="n">販売手数料'+feeRate()+'%</th><th class="n">売上予測<small class="fmh">実売×単価×(1−手数料'+feeRate()+'%)</small></th></tr></thead><tbody>';
- ord.forEach(k=>{const g=G[k],rpk=cropRP(k),pr=rpk!=null?rpk:cropPrice(k);h+=`<tr><td>${esc(g.crop)}</td><td class="n">${g.any?fmtKg(g.real):""}</td><td class="n">${g.m2>0?(g.m2/100).toFixed(1):""}</td><td class="n">${pr==null?"未設定":fmtYen(pr)}</td><td class="n">${g.ret?(g.fee?"−"+fmtYen(g.fee):""):'<small style="opacity:.6">対象外</small>'}</td><td class="n">${g.rev?fmtYen(g.rev):""}</td></tr>`});
+ ord.forEach(k=>{const g=G[k],rpk=cropRP(k),pr=rpk!=null?rpk:cropPrice(k);h+=`<tr><td>${esc(g.crop)}</td><td class="n">${g.any?fmtKg(g.real)+ybag(g.crop,g.real,g.m2):""}</td><td class="n">${g.m2>0?(g.m2/100).toFixed(1):""}</td><td class="n">${pr==null?"未設定":fmtYen(pr)}</td><td class="n">${g.ret?(g.fee?"−"+fmtYen(g.fee):""):'<small style="opacity:.6">対象外</small>'}</td><td class="n">${g.rev?fmtYen(g.rev):""}</td></tr>`});
  if(!ord.length)h+='<tr><td colspan="6" style="opacity:.6">栽培計画で野菜名を選ぶと、ここに集計されます</td></tr>';
  h+=`</tbody><tfoot><tr><td>合計</td><td class="n">${fmtKg(sm(x=>x.c.real))}</td><td class="n">${L.length?(sm(x=>ridgeM2(x.g,x.i))/100).toFixed(1):""}</td><td></td><td class="n">${feeSum>0?"−"+fmtYen(feeSum):""}</td><td class="n">${fmtYen(sm(x=>x.c.rev))}</td></tr></tfoot>`;
  h+=`<caption class="fmc" style="caption-side:bottom;text-align:left;font-size:12px;opacity:.75;padding:6px 2px">売上予測 ＝ 実売数量 × 単価 ×（1 − 販売手数料${feeRate()}%）。手数料は、小売単価で計算する農産物にだけかかります。卸単価で計算する農産物（対象外）は、手数料を引きません。</caption>`;
@@ -2273,12 +2356,12 @@ function renderY(){
  let h='<thead><tr><th>圃場</th><th>畝名</th><th>季</th><th>野菜名</th><th>品種</th><th>栽培</th><th>収穫時期</th><th class="n">予想数量(kg)</th><th class="n">実績数量(kg)</th><th class="n">秀品率(%)</th><th class="n">販売収量(kg)</th><th class="n">販売率(%)</th><th class="n">実売数量(kg)</th><th class="n">単価(円/kg)</th><th class="n">売上予測<small class="fmh">実売×単価×(1−手数料'+feeRate()+'%)</small></th></tr></thead><tbody>';
  L.forEach(x=>{const s=x.s,c=x.c,d=`data-g="${x.g}" data-i="${x.i}" data-k="${x.k}"`;
   h+=`<tr data-key="${x.key}"><td>${esc(x.f.name)}</td><td>${esc(RN(x.g,x.i))}</td><td>${s.season===""||s.season==null?"":SEA[s.season]}</td><td>${esc(s.crop)}</td><td>${esc(s.variety||"")}</td><td>${esc(s.cult||"")}</td><td>${hspan(x.key)}</td>`+
-   `<td class="n lk">${c.est==null?"－":fmtKg(c.est)}</td><td class="n in"><input class="yin" type="number" min="0" step="any" ${d} data-yf="act" value="${c.rec.act==null||c.rec.act===""?"":c.rec.act}" placeholder="" style="width:80px"></td><td class="n lk">${c.rate}</td><td class="n lk" data-rv="sell">${fmtKg(c.sell)}${c.act==null&&c.sell!=null?'<span style="opacity:.6;font-size:11px">（予想）</span>':""}</td><td class="n lk">${c.hr}</td><td class="n lk" data-rv="real">${fmtKg(c.real)}</td><td class="n lk">${c.pr==null?"未設定":fmtYen(c.pr)+(Math.abs(c.cp-1)>0.001?` <small style="opacity:.7">×${c.cp.toFixed(2)}</small>`:"")}</td><td class="n lk" data-rv="rev">${revCell(c)}</td></tr>`});
+   `<td class="n lk">${c.est==null?"－":fmtKg(c.est)+ybag(s.crop,c.est,ridgeM2(x.g,x.i))+ytree(s,c.est)}</td><td class="n in"><input class="yin" type="number" min="0" step="any" ${d} data-yf="act" value="${c.rec.act==null||c.rec.act===""?"":c.rec.act}" placeholder="" style="width:80px"></td><td class="n lk">${c.rate}</td><td class="n lk" data-rv="sell">${fmtKg(c.sell)}${c.act==null&&c.sell!=null?'<span style="opacity:.6;font-size:11px">（予想）</span>':""}</td><td class="n lk">${c.hr}</td><td class="n lk" data-rv="real">${fmtKg(c.real)}${ybag(s.crop,c.real,ridgeM2(x.g,x.i))}</td><td class="n lk">${c.pr==null?"未設定":fmtYen(c.pr)+(Math.abs(c.cp-1)>0.001?` <small style="opacity:.7">×${c.cp.toFixed(2)}</small>`:"")}</td><td class="n lk" data-rv="rev">${revCell(c)}</td></tr>`});
  if(!L.length)h+='<tr><td colspan="15" style="opacity:.6">レコードがありません。栽培計画で野菜名を選んでください</td></tr>';
  $("yl").innerHTML=h+"</tbody>"}
 function refreshY(){const L=yrecs();ysummary(L);
  L.forEach(x=>{const tr=document.querySelector(`#yl tr[data-key="${x.key}"]`);if(!tr)return;
-  tr.querySelector('[data-rv="rev"]').innerHTML=revCell(x.c);tr.querySelector('[data-rv="real"]').textContent=fmtKg(x.c.real);tr.querySelector('[data-rv="sell"]').innerHTML=fmtKg(x.c.sell)+(x.c.act==null&&x.c.sell!=null?'<span style="opacity:.6;font-size:11px">（予想）</span>':"")})}
+  tr.querySelector('[data-rv="rev"]').innerHTML=revCell(x.c);tr.querySelector('[data-rv="real"]').innerHTML=fmtKg(x.c.real)+ybag(x.s.crop,x.c.real,ridgeM2(x.g,x.i));tr.querySelector('[data-rv="sell"]').innerHTML=fmtKg(x.c.sell)+(x.c.act==null&&x.c.sell!=null?'<span style="opacity:.6;font-size:11px">（予想）</span>':"")})}
 $("yl").onchange=e=>{const t=e.target;if(!t.dataset.yf)return;
  const s=S.fields[+t.dataset.g].ridges[+t.dataset.i].slots[+t.dataset.k];
  s.yd=s.yd||{};const r=s.yd[V.y]=s.yd[V.y]||{};
@@ -2440,6 +2523,7 @@ function renderMisc(){
  (S.misc||[]).forEach((m,i)=>{h+=`<tr><td><input class="yin" style="width:190px;text-align:left" data-pmi="${i}" data-pmf="n" value="${esc(m.n||"")}"></td><td class="n"><input class="yin" type="number" min="0" step="any" data-pmi="${i}" data-pmf="amt" value="${m.amt===""||m.amt==null?"":m.amt}"></td><td><input class="yin" style="width:420px;text-align:left" data-pmi="${i}" data-pmf="note" value="${esc(m.note||"")}"></td><td><button data-pmd="${i}">✕</button></td></tr>`});
  h+=`</tbody><tfoot><tr><td>合計</td><td class="n" data-pc="mt">${fmtYen(miscTotal())||"0円"}</td><td colspan="2"></td></tr></tfoot>`;
  $("pt4").innerHTML=h}
+function hobiNote(g,i,k){try{const r=S.fields[g].ridges[i],M=S.marks[r.id+"-"+k]||{};if(!luOf(r.slots[k].crop))return"";const ds=Object.keys(M).filter(d=>d.startsWith(String(V.y))&&M[d].toLowerCase()=="p").sort();return ds.length?`<small class="fmh">穂肥の予定 ${+ds[0].slice(5,7)}/${+ds[0].slice(8)}${M[ds[0]]=="p"?"（予定）":""}</small>`:""}catch(e){return""}}
 function renderP(){
  $("ptags").innerHTML=`<button class="tab${PF<0?" on":""}" data-pft="-1">全圃場</button>`+S.fields.map((f,i)=>f.on?`<button class="tab${i==PF?" on":""}" data-pft="${i}">${esc(f.name)}</button>`:"").join("");
  $("prtitle").textContent="肥培管理　使用資材の一覧（"+V.y+"年度・"+(PF>=0&&S.fields[PF]?S.fields[PF].name:"全圃場")+"）";
@@ -2462,7 +2546,7 @@ function renderP(){
   if(!x.items.length){h3+=`<tr>${head}<td colspan="5" style="opacity:.6">${x.subs.length?"資材なし":"施肥例が未登録です"}</td></tr>`;return}
   const its=[...x.items].sort((a,b)=>(a.kind==b.kind?0:a.kind=="base"?-1:1));
   its.forEach((it,j)=>{const cat=matKind(it.name),pi=priceInfo(it.name),yen=pi.perKg==null?null:it.q*pi.perKg;const t=kt[cat]=kt[cat]||{kg:0,yen:0,n:0};t.kg+=it.q;if(yen!=null)t.yen+=yen;
-   h3+=`<tr class="${j?"sub":"first"}">${j?'':head.replace(/<td>/g,'<td class="rs" rowspan="'+its.length+'">')}<td>${it.kind=="base"?"元肥":"追肥"}</td><td>${cat}</td><td>${esc(it.name)}</td><td class="n">${fmtKg(it.q)}</td><td class="n">${yen==null?"—":fmtYen(yen)}</td></tr>`})});
+   h3+=`<tr class="${j?"sub":"first"}">${j?'':head.replace(/<td>/g,'<td class="rs" rowspan="'+its.length+'">')}<td>${it.kind=="base"?"元肥":"追肥"}${it.kind=="top"?hobiNote(x.g,x.i,x.k):""}</td><td>${cat}</td><td>${esc(it.name)}</td><td class="n">${fmtKg(it.q)}</td><td class="n">${yen==null?"—":fmtYen(yen)}</td></tr>`})});
  if(!A.recs.length)h3+='<tr><td colspan="12" style="opacity:.6">対象の畝がありません</td></tr>';
  $("pt3").innerHTML=h3+"</tbody>";
  }
@@ -2605,7 +2689,7 @@ function planChecks(){
  return L}
 function planCheckHtml(){const L=planChecks(),lab={ok:"OK",ng:"要入力",opt:"任意"},go={me:"マイページ",yield:"収量管理",ship:"出荷",prep:"肥培管理",equip:"設備投資",bm:"収支マスタ"};
  const ng=L.filter(x=>x.st=="ng").length;
- return `<h3 class="yh">判定に使う入力のチェック</h3><div class="hint" style="max-width:780px;line-height:1.6">${ng?"<b>要入力が"+ng+"件あります。</b>":"要入力の項目はありません。"}自動で計算するために、どこかのタブで入力しておく項目です。</div><div class="plchk">${L.map(x=>`<div class="pc ${x.st}"><span class="pcs">${lab[x.st]}</span><div><b>${esc(x.t)}</b><small>${esc(x.d)}</small></div>${x.go?`<button type="button" class="pcg" data-go="${x.go}">${go[x.go]}</button>`:""}</div>`).join("")}</div>`}
+ return `<h3 class="yh">判定に使う入力のチェック</h3><div class="hint" style="max-width:780px;line-height:1.6">${ng?"<b>要入力が"+ng+"件あります。</b>":"要入力の項目はありません。"}${ng?"自動で計算するために、どこかのタブで入力しておく項目です。":""}</div><div class="plchk">${L.map(x=>`<div class="pc ${x.st}"><span class="pcs">${lab[x.st]}</span><div><b>${esc(x.t)}</b><small>${esc(x.d)}</small></div>${x.go?`<button type="button" class="pcg" data-go="${x.go}">${go[x.go]}</button>`:""}</div>`).join("")}</div>`}
 function planSolve(E,target){const f=x=>planCalc(Object.assign({},E,{rev:x}),S.planPar).net;if(!(target>0))return null;let lo=0,hi=1e9;if(f(hi)<target)return null;if(f(0)>=target)return 0;for(let i=0;i<60;i++){const m=(lo+hi)/2;if(f(m)>=target)hi=m;else lo=m}return Math.ceil(hi/1000)*1000}
 
 /* ===== 年のシナリオ・資金返済計画 ===== */
@@ -2642,7 +2726,7 @@ function planScenHtml(E,A,noFund){
  const ch=r=>{const c=sc[r.k];return [["収量",c.q],["単価",c.p],["販売率",c.r],["資材費",c.m]].map(([a,b])=>a+(b>0?"+":"")+b+"%").join(" ")};
  const rows=noFund?"":fdSurv(E,A);
  return `<h3 class="yh">不作年・基準年・豊作年の比べ（${V.y}年）</h3>
- <div class="hint" style="max-width:780px;line-height:1.6">基準年は、今の計画の数字です。不作年・豊作年は、売上を（収量×単価×販売率）の変化率で増減し、資材費の変化も経費に足して、税・社会保険料まで計算し直します。変化率は、この画面の上の表で変えられます（根拠のある数字ではなく、目安です）。</div>
+ <div class="hint" style="max-width:780px;line-height:1.6">基準年は、今の計画の数字です。不作年・豊作年は、売上を（収量×単価×販売率）の変化率で増減し、資材費の変化も経費に足して、税・社会保険料まで計算し直します。</div>
  <div class="ow"><table class="yt scn"><thead><tr><th></th>${R3.map(r=>`<th class="n">${SCN[r.k]}</th>`).join("")}</tr></thead><tbody>
  ${row("想定",r=>`<small>${ch(r)}</small>`)}
  ${row("売上",r=>n(r.S1.rev))}
@@ -2708,7 +2792,7 @@ function simChart(E,A){
  const z=`<line x1="${pl}" x2="${W-pr}" y1="${Y(0).toFixed(1)}" y2="${Y(0).toFixed(1)}" stroke="#333" stroke-width="1.5"/>`;
  const lines=L.map(l=>`<polyline fill="none" stroke="${l.c}" stroke-width="2.5" points="${l.rows.map((r,i)=>X(i).toFixed(1)+","+Y(r.cash).toFixed(1)).join(" ")}"/>`+l.rows.map((r,i)=>`<circle cx="${X(i).toFixed(1)}" cy="${Y(r.cash).toFixed(1)}" r="3" fill="${l.c}"/>`).join("")).join("");
  const lg=L.map(l=>`<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px;font-size:13px"><i style="width:18px;height:4px;border-radius:2px;background:${l.c};display:inline-block"></i>${l.t}（最終年 ${man(l.rows[N-1].cash)}円）</span>`).join("");
- return `<h3 class="yh">手元資金（年末）の推移</h3><div class="hint" style="max-width:780px;line-height:1.6">毎年、不作年・基準年・豊作年のどれかが続いた場合の、年末の手元資金です。0より下は、資金が足りない年です。売上・経費は、その年の栽培計画と収支設定の数字です（計画のない年は前の年のコピー）。</div><div style="margin:4px 0">${lg}</div><div class="ow"><svg viewBox="0 0 ${W} ${H}" width="100%" style="max-width:${W}px;height:auto;background:#fff;border:1px solid #e3dcc6;border-radius:8px" role="img" aria-label="手元資金の推移">${grid}${z}${lines}${xs}</svg></div>`}
+ return `<h3 class="yh">手元資金（年末）の推移</h3><div class="hint" style="max-width:780px;line-height:1.6">毎年、不作年・基準年・豊作年のどれかが続いた場合の、年末の手元資金です。0より下は、資金が足りない年です。</div><div style="margin:4px 0">${lg}</div><div class="ow"><svg viewBox="0 0 ${W} ${H}" width="100%" style="max-width:${W}px;height:auto;background:#fff;border:1px solid #e3dcc6;border-radius:8px" role="img" aria-label="手元資金の推移">${grid}${z}${lines}${xs}</svg></div>`}
 let SIMY2=null;
 function simHtml(Y,Y2){if(Y2==null)Y2=Y;
  const a=withYear(Y,()=>{const {E,A}=planEff();return planScenHtml(E,A,true)});
@@ -2811,7 +2895,7 @@ function planShow(){
   <div class="pllg"><span><i class="e"></i>必要経費 ${Math.round(pe)}%</span><span><i class="t"></i>税・社会保険料 ${Math.round(pt)}%</span><span><i class="n"></i>可処分所得 ${Math.round(pn)}%</span><span class="pn">（総収入＋交付金＋その他の収入 ${y(inc)} に対する割合）</span></div>
   <div class="wrap"><table class="yt plsheet"><thead><tr><th>項目と計算式</th><th>切替</th><th class="n">金額(円)</th></tr></thead><tbody>${fl.map(([no,a,b,c,k,ek])=>{const key=(ek||"").trim(),man=key&&!E._auto[key],tg2=key?`<button type="button" class="plm${man?" on":""}" data-pm="${key}" title="自動と手動を切り替えます">${man?"手動":"自動"}</button>`:"",amt=man?`<span class="plstep"><button type="button" data-pst="${key}:-1" title="50万円減らす">▼</button><input class="yin" type="number" step="500000" min="0" data-pp="${key}" value="${Math.round(b)}"><button type="button" data-pst="${key}:1" title="50万円増やす">▲</button></span>`:n(b);return `<tr class="${k}"><td>${no?`<span class="plno">${no}</span>`:""}${esc(a)}${c?`<small class="pls">${esc(c)}</small>`:""}</td><td class="c">${tg2}</td><td class="n">${amt}</td></tr>`}).join("")}</tbody></table></div>
   <div class="hint" style="max-width:780px;line-height:1.6">税は、この年の所得に対する年額です。住民税・国保・個人事業税は翌年度に納めます（初年度の年内の支払いとは時期がずれます）。</div>
-  ${cfHtml(E,A)}<div class="hint noprint" style="max-width:780px;line-height:1.6;margin-top:10px">不作年・基準年・豊作年の比べと、資金の見通し（10年）は、メニューの「年次シミュレーション」に移しました。</div>
+  ${cfHtml(E,A)}
   <div class="noprint">${planCheckHtml()}
   <details><summary>計算の途中経過を見る</summary><div class="ow"><table class="yt"><thead><tr><th>項目</th><th class="n">金額(円)</th><th>メモ</th></tr></thead><tbody>${R.L.map(([a,b,c])=>`<tr><td>${a}</td><td class="n">${b?fmtYen(b).replace("円",""):""}</td><td>${esc(c||"")}</td></tr>`).join("")}</tbody></table></div></details></div>`}
 $("pg6").addEventListener("change",e=>{const t=e.target;
@@ -2971,9 +3055,9 @@ function renderDiary(){
  const locRow=(idx,g,pl,rg)=>{const isP=idx==="p",fl=g!==""&&g!=null?S.fields[+g]:null,ga=isP?'data-df="g"':`data-mf="${idx}:g"`,pa=isP?'data-df="pl"':`data-mf="${idx}:pl"`;
   const gs=`<select class="yin dsel" style="width:100%" ${ga}><option value="">指定なし</option>${S.fields.map((f,i)=>(f.on||(g!==""&&i==g))&&(!cf||fieldHasCrop(f,D.c)||(g!==""&&i==g))?o(i,f.name,g!==""&&i==g):"").join("")}</select>`;
   const ps=`<select class="yin dsel" style="width:100%" ${pa}><option value="">指定なし</option>${(()=>{if(!fl)return"";let h="";for(let k=0;k<plotCount(fl);k++){if(cf&&fieldHasCrop(fl,D.c)&&!ridgesOf(fl,k).some(([r])=>ridgeHasCrop(r,D.c))&&String(k)!==String(pl))continue;h+=o(k,String.fromCharCode(65+k)+"区",String(k)===String(pl))}return h})()}</select>`;
-  const rl=(()=>{if(!fl)return[];const a=[];fl.ridges.forEach((r,i)=>{if((pl===""||pl==null||String(plotOf(r))===String(pl))&&(!cf||!fieldHasCrop(fl,D.c)||ridgeHasCrop(r,D.c)))a.push(RN(+g,i))});return a})(),sel=(rg||"").split("、").filter(Boolean);
+  const allPd=!!fl&&((pl!==""&&pl!=null)?isPaddyPlot(fl,+pl):[...Array(plotCount(fl)).keys()].every(k=>isPaddyPlot(fl,k))),rl=(()=>{if(!fl)return[];const a=[];fl.ridges.forEach((r,i)=>{if(isPaddyPlot(fl,plotOf(r)))return;if((pl===""||pl==null||String(plotOf(r))===String(pl))&&(!cf||!fieldHasCrop(fl,D.c)||ridgeHasCrop(r,D.c)))a.push(RN(+g,i))});return a})(),sel=(rg||"").split("、").filter(Boolean);
   const chips=fl?["全体",...rl].concat(sel.filter(x=>x!="全体"&&!rl.includes(x))).map(x=>`<button type="button" class="rgc${sel.includes(x)?" on":""}" data-rgt="${idx}|${esc(x)}">${esc(x)}</button>`).join(""):'<span class="hint" style="margin:0">圃場を選ぶと、畝を選べます</span>';
-  return `<div class="dlrow">${isP?"":`<div class="dlh"><b>場所${idx+2}</b><button type="button" class="dmx" data-mdel="${idx}" aria-label="この場所を削除">✕</button></div>`}<div class="dlg"><label>圃場${gs}</label><label>区画${ps}</label></div><div class="dlc"><span>畝（複数選べます）</span><div class="rgw">${chips}</div></div></div>`};
+  return `<div class="dlrow">${isP?"":`<div class="dlh"><b>場所${idx+2}</b><button type="button" class="dmx" data-mdel="${idx}" aria-label="この場所を削除">✕</button></div>`}<div class="dlg"><label>圃場${gs}</label><label>区画${ps}</label></div>${allPd?"":`<div class="dlc"><span>畝（複数選べます）</span><div class="rgw">${chips}</div></div>`}</div>`};
  const locBlock=()=>`<div class="wide dloc"><div class="dlt">圃場・区画・畝${cf?`<span class="dlh2">（${esc(D.c)}がある場所だけ表示）</span>`:""}</div>${locRow("p",D.g,D.pl,D.rg)}${(D.more||[]).map((r,i)=>locRow(i,r.g,r.pl,r.rg)).join("")}<button type="button" id="dladd" class="dladd">＋ 場所を追加</button></div>`;
  const rgList=(()=>{const f=S.fields[D.g];if(!f)return[];const o=[];f.ridges.forEach((r,i)=>{if(D.pl===""||String(plotOf(r))===String(D.pl))o.push(RN(D.g,i))});return o})();
  
@@ -3177,7 +3261,7 @@ on7("click",async e=>{const t=e.target.closest("button")||e.target;
  if(t.dataset.mdel!=null){DF.more.splice(+t.dataset.mdel,1);renderDiary();return}
  if(t.id=="dmadd"){DF.mats.push(["","","kg","","","",""]);renderDiary();return}
  if(t.dataset.dmdel!=null){DF.mats.splice(+t.dataset.dmdel,1);renderDiary();return}
- if(t.id=="wadd"){WF=true;DF=newDF({d:DSEL||todayStr(),who:DF.who,g:DF.g});DEDIT=null;renderDiary();goForm();const ti=document.querySelector('[data-df="ti"]');if(ti)ti.focus();return}
+ if(t.id=="wadd"){WF=true;DF=newDF({d:DSEL||todayStr(),who:DF.who,g:DF.g});DEDIT=null;renderDiary();goForm();if(document.activeElement&&document.activeElement.blur)document.activeElement.blur();return}
  if(t.dataset.dcopy!=null){const x=(S.diary||[]).find(z=>z.id==t.dataset.dcopy);if(x){WF=true;DF=Object.assign(newDF(),JSON.parse(JSON.stringify(x)));delete DF.id;DF.d=DSEL||x.d;DEDIT=null;renderDiary();goForm();dmsg("コピーしました。内容を直して保存すると、新しい作業になります")}return}
  if(t.id=="dcopy2"){DEDIT=null;renderDiary();dmsg("コピーしました。内容を直して保存すると、新しい作業になります");return}
  if(t.id=="dclose"){WF=false;DEDIT=null;DF=newDF({d:DSEL||todayStr(),who:DF.who});renderDiary();return}
@@ -3539,14 +3623,14 @@ function planPdfPages(fidx){
  if(yr){for(let m=1;m<=12;m++){const nd=new Date(V.y,m,0).getDate();for(let d=1;d<=nd;d++)days.push({m,d,t:ymd(V.y,m,d),w:new Date(V.y,m-1,d).getDay()})}}
  else{const nd=new Date(V.y,V.m,0).getDate();for(let d=1;d<=nd;d++)days.push({m:V.m,d,t:ymd(V.y,V.m,d),w:new Date(V.y,V.m-1,d).getDay()})}
  const cw=[14,36,28,30].map(v=>v*U),LEFT=cw.reduce((a,b)=>a+b,0),TW=PW-LEFT,DW=TW/days.length,RH=7*U,TT=8*U,HDR=RH;
- const COL={s:["#2f6fe4","rgba(47,111,228,.22)"],t:["#f5b800","rgba(245,184,0,.30)"],h:["#1f9d2b","rgba(31,157,43,.22)"]};
+ const COL={s:["#2f6fe4","rgba(47,111,228,.22)"],t:["#f5b800","rgba(245,184,0,.30)"],h:["#1f9d2b","rgba(31,157,43,.22)"],p:["#d6336c","rgba(214,51,108,.25)"],e:["#9c36b5","rgba(156,54,181,.25)"],q:["#8d6e63","rgba(141,110,99,.25)"],b:["#00897b","rgba(0,137,123,.25)"],m:["#e67e22","rgba(230,126,34,.25)"],v:["#5c6bc0","rgba(92,107,192,.25)"],r:["#ad1457","rgba(173,20,87,.25)"]};
  const rows=[],seaOK=sl=>{const v=V.sea;if(v==null||v==="")return true;const x=sl.season;return v==="n"?(x===""||x==null):String(x)===String(v)};
  fidx.forEach(g=>{const f=S.fields[g];if(!f)return;rows.push({k:"f",t:"圃場："+(f.name||"")});{const nt=sysTxt(g,V.y).trim();if(nt)rows.push({k:"n",t:nt,title:"作付計画（"+V.y+"年）"})}
   const pls=plotCount(f),pl=V.pl>=0&&V.pl<pls?[V.pl]:[...Array(pls).keys()];
   pl.forEach(p=>ridgesOf(f,p).forEach(([r,i])=>{const nn=r.n||2;let first=true;
    for(let k=0;k<nn;k++){const sl=r.slots[k];if(!sl||!seaOK(sl))continue;const key=r.id+"-"+k,M=S.marks[key]||{};
     if(!sl.crop&&!Object.keys(M).some(d=>d.startsWith(String(V.y))))continue;
-    rows.push({k:"r",rn:first?RN(g,i):"",crop:sl.crop||"",fam:famOf(sl.crop),v:sl.variety||"",c:sl.cult||"",M});first=false}}))});
+    rows.push({k:"r",rn:first?RN(g,i):"",crop:sl.crop||"",fam:famOf(sl.crop),v:sl.variety||"",c:sl.cult||"",M});if(luOf(sl.crop))rows.push({k:"w",key});first=false}}))});
  const pages=[],mk=()=>{const cv=document.createElement("canvas");return cv};
  const NW=PW-28,rh=o=>o.k=="n"?o.h:RH;
  {const mc=mk().getContext("2d");mc.font="15px "+FONT;rows.forEach(o=>{if(o.k!="n")return;const L=[];o.t.split(/\r?\n/).forEach(p=>{let c="";for(const ch of p){if(mc.measureText(c+ch).width>NW){L.push(c);c=ch}else c+=ch}L.push(c)});o.lines=L.slice(0,20);o.h=8+30+o.lines.length*22+12})}
@@ -3559,7 +3643,8 @@ function planPdfPages(fidx){
   ctx.textAlign="left"};
  const drawRow=(ctx,o,y0)=>{
   if(o.k=="n"){ctx.fillStyle="#fff";ctx.fillRect(0,y0,PW,o.h);ctx.strokeStyle="#1f5233";ctx.lineWidth=2;ctx.strokeRect(1,y0+4,PW-2,o.h-8);ctx.textBaseline="middle";ctx.textAlign="left";ctx.fillStyle="#1f5233";ctx.font="bold 15px "+FONT;ctx.fillText(o.title,14,y0+4+18);ctx.fillStyle="#111";ctx.font="15px "+FONT;o.lines.forEach((l,i)=>ctx.fillText(l,14,y0+4+18+26+i*22));ctx.lineWidth=1;return}
-  if(o.k=="f"){ctx.fillStyle="#e3eddf";ctx.fillRect(0,y0,PW,RH);ctx.fillStyle="#1f5233";ctx.font="bold 17px "+FONT;ctx.textBaseline="middle";ctx.fillText(o.t,6,y0+RH/2);return}
+  if(o.k=="w"){ctx.fillStyle="#fff";ctx.fillRect(0,y0,PW,RH);const WM=waterMap(o.key,V.y),WC={w:"#9b6b3a",f:"#4aa3df",d:"#f2c14e",i:"#8fd3c8",o:"#b0b0b0"};days.forEach((d,i)=>{const w=WM[d.t];if(w){ctx.fillStyle=WC[w];ctx.fillRect(LEFT+i*DW,y0+RH/4,DW,RH/2)}});ctx.fillStyle="#6b7f6b";ctx.font="11px "+FONT;ctx.textBaseline="middle";ctx.textAlign="left";ctx.fillText("水の状態（湛水・中干し・落水）",6,y0+RH/2);ctx.strokeStyle="#c5d2c5";ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(0,y0+RH-.5);ctx.lineTo(PW,y0+RH-.5);ctx.stroke();return}
+ if(o.k=="f"){ctx.fillStyle="#e3eddf";ctx.fillRect(0,y0,PW,RH);ctx.fillStyle="#1f5233";ctx.font="bold 17px "+FONT;ctx.textBaseline="middle";ctx.fillText(o.t,6,y0+RH/2);return}
   ctx.fillStyle="#fff";ctx.fillRect(0,y0,PW,RH);ctx.strokeStyle="#c5d2c5";ctx.lineWidth=1;
   if(!yr)days.forEach((d,i)=>{if(d.w==0||d.w==6){ctx.fillStyle="#eef3ee";ctx.fillRect(LEFT+i*DW,y0,DW,RH)}});
   ctx.fillStyle="#111";ctx.textBaseline="middle";ctx.font="bold 15px "+FONT;let x=0;
@@ -3880,7 +3965,7 @@ function locOpts(D0){const o=[];locs(D0).forEach(l=>{const g=l.g;if(g===""||g==n
  const rg=(l.rg||"").split("、").filter(Boolean),all=!rg.length||rg.includes("全体"),pls=l.pl===""||l.pl==null?[...Array(plotCount(f)).keys()]:[+l.pl];
  if(!o.some(x=>x.k=="f"+g))o.push({k:"f"+g,lb:f.name,t:"f",g:+g,a:pls.reduce((a,p)=>a+(plotArea(f,p)||0),0)});
  if(plotCount(f)>1||l.pl!==""&&l.pl!=null)pls.forEach(p=>{const lb=f.name+"・"+String.fromCharCode(65+p)+"区";if(!o.some(x=>x.lb==lb))o.push({k:"p"+g+"_"+p,lb,t:"p",g:+g,p,a:plotArea(f,p)||0})});
- if(l.pl!==""&&l.pl!=null||plotCount(f)==1)f.ridges.forEach((r,i)=>{if(!pls.includes(+plotOf(r)))return;const nm=RN(+g,i);if(!all&&!rg.includes(nm))return;const lb=f.name+"・"+nm;if(!o.some(x=>x.lb==lb))o.push({k:"r"+g+"_"+i,lb,t:"r",g:+g,p:+plotOf(r),a:ridgeM2(+g,i)})})});return o}
+ if(l.pl!==""&&l.pl!=null||plotCount(f)==1)f.ridges.forEach((r,i)=>{if(!pls.includes(+plotOf(r))||isPaddyPlot(f,plotOf(r)))return;const nm=RN(+g,i);if(!all&&!rg.includes(nm))return;const lb=f.name+"・"+nm;if(!o.some(x=>x.lb==lb))o.push({k:"r"+g+"_"+i,lb,t:"r",g:+g,p:+plotOf(r),a:ridgeM2(+g,i)})})});return o}
 function locSelArea(D0,txt){const tk=(txt||"").split("、").map(s=>s.trim()).filter(Boolean),o=locOpts(D0).filter(x=>tk.includes(x.lb));if(!o.length)return null;
  const fs=o.filter(x=>x.t=="f").map(x=>x.g),ps=o.filter(x=>x.t=="p").map(x=>x.g+"_"+x.p);let a=0;
  o.forEach(x=>{if(x.t=="p"&&fs.includes(x.g))return;if(x.t=="r"&&(fs.includes(x.g)||ps.includes(x.g+"_"+x.p)))return;a+=x.a});return a}
@@ -4102,7 +4187,7 @@ async function setPlotCount(g,n){const f=S.fields[g],cur=plotCount(f);f.pa=(f.pa
   purgeRidges(g,rem.map(r=>r.id));
   f.ridges=f.ridges.filter(r=>plotOf(r)<n)}
  else for(let p=cur;p<n;p++)for(let j=1;j<=8;j++)f.ridges.push({id:L(g)+L(p)+j,p,n:2,slots:[slot(),slot(),slot(),slot()]});
- f.plots=n;if(V.pl>=n)V.pl=-1;SELR=[];render();save()}
+ if(f.pk)f.pk=f.pk.slice(0,n);f.plots=n;if(V.pl>=n)V.pl=-1;SELR=[];render();save()}
 function plotUI(){const f=S.fields[V.f],n=plotCount(f);if(V.pl==null||V.pl>=n)V.pl=-1;$("plotn").value=n;{let a=0;if(V.pl>=0)a=plotArea(f,V.pl);else for(let k=0;k<n;k++)a+=plotArea(f,k);const fm=v=>v.toLocaleString("en-US",{minimumFractionDigits:1,maximumFractionDigits:1});$("plarea").innerHTML=(V.pl>=0?L(V.pl)+"区の面積 ":"面積（全"+n+"区画） ")+"<b>"+fm(a)+"</b> ㎡ <small style=\"font-weight:400;opacity:.75\">（"+fm(a/100)+" a／"+fm(a/991.7)+" 反）</small>"}{const se=$("plbtn");se.innerHTML=["全区画"].concat([...Array(n).keys()].map(p=>L(p)+"区")).map((t,i)=>`<option value="${i-1}">${t}</option>`).join("");se.value=String(V.pl)}$("plotn").disabled=true}
 
 $("plbtn").onchange=()=>{V.pl=+$("plbtn").value;P=null;SELR=[];render()};
